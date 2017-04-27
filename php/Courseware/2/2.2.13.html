@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>2.2.13 CSS 构造模型.</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/shCoreEmacs.css" type="text/css" media="screen" />
+<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+<style>
+#honor li{
+	font-family: '微软雅黑';
+	font-size: 18px;
+	margin-top:30px; 
+	margin: 30px auto;
+}
+.pwz p{
+	margin: 10px 0px 20px 0px;
+	font-size: 18px;
+	cursor: pointer;
+}
+#foot{
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 1160px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+h2{
+	cursor: pointer;
+}
+ pre{
+ 	cursor: pointer;
+ }
+ img{
+ 	cursor: pointer;
+ }
+</style>
+</head>
+<body>
+<!--STICKER-->
+<div id="sticker"></div>
+
+<div id="wrapper">
+<a href="../../index.html"><img src="../../images/logos/logo.png" alt=""></a>
+<!--BIO TITLE-->
+<p id="title">第 2 章 PHP程序开发---前端技术</p>
+<h2 id="titleName" class="sectionHead">2.2.13  CSS 构造模型</h2>
+
+<!--BIO-->
+<div id="bio">
+	
+	<div id="honor">
+		<!-- 1 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_1">1丶div</h2>
+	<div id="tc_1" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<br />
+		<p>部分 (division)---&lt;div> 元素 , 经常以 div 形式引用 --- 是 XHTML 元素 , 用于定义 XHTML 文件中的区域 .</p>
+		<p><h3>1. 添加 div</h3></p>
+		<div id="highlighter_734158" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;div&gt;</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;p&gt;This&nbsp;is&nbsp;our&nbsp;content&nbsp;area.&lt;/p&gt;</code></div><div class="line number3 index2 alt2"><code class="php plain">&lt;/div&gt;</code></div><div class="line number4 index3 alt1"><code class="php plain">给&nbsp;div&nbsp;添加一个&nbsp;id</code></div><div class="line number5 index4 alt2"><code class="php plain">&lt;div&nbsp;id=&nbsp;</code><code class="php string">"container"</code>&nbsp;<code class="php plain">&gt;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;p&gt;This&nbsp;is&nbsp;our&nbsp;content&nbsp;area.&lt;/p&gt;</code></div><div class="line number7 index6 alt2"><code class="php plain">&lt;/div&gt;</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="php plain">#container&nbsp;{</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding:&nbsp;20px;</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border:1px&nbsp;solid&nbsp;#000;</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Background:#ccc;</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>2. 添加子 div</h3></p>
+		<div id="highlighter_702634" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;div&nbsp;id=&nbsp;</code><code class="php string">"container"</code>&nbsp;<code class="php plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;p&gt;This&nbsp;is&nbsp;our&nbsp;content&nbsp;area.&lt;/p&gt;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;div&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;</code><code class="php string">"box"</code>&nbsp;<code class="php plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;p&gt;I&nbsp;’&nbsp;min&nbsp;a&nbsp;box!&lt;/p&gt;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;/div&gt;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;div&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;</code><code class="php string">"box"</code>&nbsp;<code class="php plain">&gt;</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;p&gt;I&nbsp;’&nbsp;m&nbsp;also&nbsp;in&nbsp;a&nbsp;box!&lt;/p&gt;</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;/div&gt;</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;/div&gt;</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">.box{</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">margin:10px;</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">padding:20px;</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">border:1px&nbsp;solid;</code></div><div class="line number14 index13 alt1"><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>3.div 和上下文选择器</h3></p>
+		<div id="highlighter_466894" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">box&nbsp;p&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:&nbsp;#333;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">#container&nbsp;p&nbsp;{</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:&nbsp;#333;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+<!-- 2 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_2">2丶边距</h2>
+	<div id="tc_2" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p><h3>外边距 (margin)</h3></p>
+		<p>　　外边距声明 :</p>
+		<div id="highlighter_191655" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">#container&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Margin:-top:&nbsp;20px;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Margin-lef&nbsp;t:&nbsp;auto;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Margin-right:&nbsp;auto;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Margin-bottom;&nbsp;20px;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Width:&nbsp;300px;</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border:&nbsp;1px&nbsp;solid&nbsp;#333;</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding:&nbsp;#ccc;</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">#container&nbsp;{</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Margin:&nbsp;20px&nbsp;auto&nbsp;1em&nbsp;auto;&nbsp;</code><code class="php comments">/*&nbsp;上&nbsp;,&nbsp;右&nbsp;,&nbsp;下&nbsp;,&nbsp;左&nbsp;*/</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">#container&nbsp;{</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Width:&nbsp;400px;</code></div><div class="line number15 index14 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Margin:&nbsp;10px&nbsp;auto&nbsp;10px&nbsp;auto;</code></div><div class="line number16 index15 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding:&nbsp;20px;</code></div><div class="line number17 index16 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Background:&nbsp;#ccc;</code></div><div class="line number18 index17 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Text-align:&nbsp;lef&nbsp;t;</code></div><div class="line number19 index18 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p>用margin:auto;居中</p>
+		<div id="highlighter_585001" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">body{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">text-align:center;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>内边距 (padding)</h3></p>
+		<div id="highlighter_448660" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">#container&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding-top:&nbsp;20px;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding-lef&nbsp;t:&nbsp;10%;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding-right:&nbsp;1em;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding-bottom:&nbsp;0;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Background:&nbsp;#ccc;</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>外边距 , 内边距和主体</h3></p>
+		<div id="highlighter_395716" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">Body&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Margin:&nbsp;0;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding:&nbsp;0;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	
+<!-- 3 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_3">3丶边框</h2>
+	<div id="tc_3" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p><h3>Border-style ( 边框样式 )</h3></p>
+		<div id="highlighter_714863" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">None(&nbsp;无边框&nbsp;),dotted(&nbsp;点线&nbsp;),dashed(&nbsp;虚线&nbsp;),</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Solid(&nbsp;实现&nbsp;),double(&nbsp;双线&nbsp;),groove(&nbsp;凹槽&nbsp;),ridge(&nbsp;凸槽&nbsp;),</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Inset(&nbsp;凹边&nbsp;),outset(&nbsp;凸边&nbsp;)</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php comments">/*&nbsp;上&nbsp;右&nbsp;下&nbsp;左&nbsp;*/</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border-style:&nbsp;solid&nbsp;dotted&nbsp;inset&nbsp;outset;</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border-width(&nbsp;长度&nbsp;)</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border-top-width</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border-right-width</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border-bottom-width</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Borer-lef&nbsp;t-width</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border-color</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border-top</code></div><div class="line number15 index14 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border-right</code></div><div class="line number16 index15 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border-bottom</code></div><div class="line number17 index16 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border-lef&nbsp;t</code></div><div class="line number18 index17 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Border(&nbsp;四周&nbsp;)Border-top(&nbsp;上&nbsp;)&nbsp;…</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	
+<!-- 4 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_4">4丶 定位
+</h2>
+	<div id="tc_4" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>p,h1 和 div 等成为块级元素 . 意思是这些元素显示为一块内容 , 即 ” 块框 ” . 与之相反 ,strong 和 span 等元素称为行内元素 , 即 ” 行内框 ” . 更多内容 , 后章在述 .</p>
+		<p><h3>(1). 相对定位</h3></p>
+		<div id="highlighter_39496" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">#myBox&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Position:&nbsp;relat&nbsp;ive;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Top:&nbsp;20px;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Left:&nbsp;20px;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>(2). 绝对定位</h3></p>
+		<div id="highlighter_196804" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">#myBox&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Position:absolute;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Top:&nbsp;20px;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Left:&nbsp;20px;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	<!-- 5 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_5">5丶浮动
+</h2>
+	<div id="tc_5" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_283457" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">.news&nbsp;img&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Float:&nbsp;left;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number4 index3 alt1"><code class="php plain">.news&nbsp;p&nbsp;{</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Float:&nbsp;right;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	
+</div>
+
+	<p id="foot"><a href="../2/2.2.12.html">上一节</a>　　<a href="../../index.html">首　页</a>　　<a href="../2/2.2.14.html">下一节</a></p>
+</div><!--end bio-->
+
+
+
+
+
+<!--COPYRIGHT-->
+<div id="copyright">&copy; PHP教学课件，By徐东生 </div>
+
+<!--SCRIPTS-->
+<script src="../../js/jquery-1.7.1.js"></script>
+<script src="../../js/prettyPhoto.js"></script>
+<script src="../../js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".title_white_r").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("st", "tc");
+                $(id).toggle();
+            });
+            $(".info").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("bt", "nr");
+                $(id).toggle();
+            });
+        });
+       function tc(val){
+       	window.open(val,"newwindow","height=500, width=800, top=300,left=500,toolbar=no,menubar=no, scrollbars=no, resizable=no,location=no,status=no");
+       }
+ </script>
+
+</body>
+</html>

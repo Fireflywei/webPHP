@@ -1,0 +1,128 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>2.2.9　CSS 文字与文本.</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/shCoreEmacs.css" type="text/css" media="screen" />
+<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+<style>
+#honor li{
+	font-family: '微软雅黑';
+	font-size: 18px;
+	margin-top:30px; 
+	margin: 30px auto;
+}
+.pwz p{
+	margin: 10px 0px 20px 0px;
+	font-size: 18px;
+	cursor: pointer;
+}
+#foot{
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 1160px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+h2{
+	cursor: pointer;
+}
+ pre{
+ 	cursor: pointer;
+ }
+ img{
+ 	cursor: pointer;
+ }
+</style>
+</head>
+<body>
+<!--STICKER-->
+<div id="sticker"></div>
+
+<div id="wrapper">
+<a href="../../index.html"><img src="../../images/logos/logo.png" alt=""></a>
+<!--BIO TITLE-->
+<p id="title">第 2 章 PHP程序开发---前端技术</p>
+<h2 id="titleName" class="sectionHead">2.2.9  CSS 背景与列表</h2>
+
+<!--BIO-->
+<div id="bio">
+	
+	<div id="honor">
+		<!-- 1 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_1">1丶CSS 中背景的使用</h2>
+	<div id="tc_1" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_188847" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">属性名称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;属性值&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明</code></div><div class="line number2 index1 alt1"><code class="php plain">background-attachment&nbsp;&nbsp;&nbsp;&nbsp;scroll&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设置背景图像会随视条的移动而移动。</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">fixed&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设置背景图像不会随视窗滚动条的移动而移动。</code></div><div class="line number4 index3 alt1"><code class="php plain">background-color&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;十六进制&nbsp;&nbsp;&nbsp;&nbsp; background-color:#ff0000;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">英文名称&nbsp;&nbsp;&nbsp;&nbsp; background-color:red;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">三原色&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-color:rgb(255,0,0)</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">transparent&nbsp;&nbsp;background-color:transparent;&nbsp;透明</code></div><div class="line number8 index7 alt1"><code class="php plain">background-image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;background-image:url(</code><code class="php string">"bg.jpg"</code><code class="php plain">)背景图片</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不设置背景图片</code></div><div class="line number10 index9 alt1"><code class="php plain">background-position&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;top&nbsp;left&nbsp;&nbsp;&nbsp; 设置背景图案出现在上左方。</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">top&nbsp;center&nbsp;&nbsp;&nbsp; 设置背景图案出现在上方中间。</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">top&nbsp;right&nbsp;&nbsp;&nbsp;&nbsp; 设置背景图案出现在上右方。</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">center&nbsp;left&nbsp;&nbsp; 设置背景图案出现在中间左方。</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">center&nbsp;center&nbsp;&nbsp;&nbsp;&nbsp; 设置背景图案出现在&nbsp;IE&nbsp;中间。</code></div><div class="line number15 index14 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">center&nbsp;right&nbsp; 设置背景图案出现中间右方。</code></div><div class="line number16 index15 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">bottom&nbsp;left&nbsp;&nbsp; 设置背景图案出现在下左方。</code></div><div class="line number17 index16 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">bottom&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;设置背景图案出现在正下方。</code></div><div class="line number18 index17 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">bottom&nbsp;right&nbsp; 设置背景图案出现在下右方。</code></div><div class="line number19 index18 alt2"><code class="php plain">background-repeat&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;repeat&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将背景图案填满整个背景。</code></div><div class="line number20 index19 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">repeat-x&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;将背景图案在水平方向添满。</code></div><div class="line number21 index20 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">repeat-y&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;将背景图案在垂直方向添满。</code></div><div class="line number22 index21 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">no-repeat&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;图案只出现一次。</code></div><div class="line number23 index22 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code>&nbsp;</div><div class="line number24 index23 alt1"><code class="php plain">背景图案简化方案：</code></div><div class="line number25 index24 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">background:&nbsp;颜色&nbsp;背景图片&nbsp;repeat&nbsp;attachment&nbsp;position</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+<!-- 2 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_2">2丶CSS 中列表的使用</h2>
+	<div id="tc_2" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_105290" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">属性名称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;属性值&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">list-style-type&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;none&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;无符号</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">disc&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实体的小圆点。</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">circle&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;空心的小圆点。</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">square&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;实心的小方块。</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">decimal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1,2,3...</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">lower-roman&nbsp;&nbsp;&nbsp;&nbsp;i,ii,iii...</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">upper-roman&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I,II,III...</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">lower-alpha&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a,b,c,d,e...</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">upper-alpha&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;A,B,C,D,E...</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">list-style-position&nbsp;&nbsp;&nbsp; inside&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;清单项目较往右移。</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">outside&nbsp; 清单项目正常显示。</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">list-style-image&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;list-style-image:url(lmk.gif)</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">none&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;不会显示任何图象</code></div><div class="line number15 index14 alt2"><code class="php plain">清单的简化设置：</code></div><div class="line number16 index15 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">list-style:circle&nbsp;inside&nbsp;url(</code><code class="php string">"bullet.gif"</code><code class="php plain">)</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+<!-- 5 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_5">5丶作业</h2>
+	<div id="tc_5" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>练习css中背景的各种属性，并在作业中充分体现出来</p>
+		<p>练习css中列表的各种属性，对比HTML的属性</p>
+	</div>
+	</div>
+</div>
+
+	<p id="foot"><a href="../2/2.2.8.html">上一节</a>　　<a href="../../index.html">首　页</a>　　<a href="../2/2.2.10.html">下一节</a></p>
+</div><!--end bio-->
+
+
+
+
+
+<!--COPYRIGHT-->
+<div id="copyright">&copy; PHP教学课件，By徐东生 </div>
+
+<!--SCRIPTS-->
+<script src="../../js/jquery-1.7.1.js"></script>
+<script src="../../js/prettyPhoto.js"></script>
+<script src="../../js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".title_white_r").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("st", "tc");
+                $(id).toggle();
+            });
+            $(".info").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("bt", "nr");
+                $(id).toggle();
+            });
+        });
+       function tc(val){
+       	window.open(val,"newwindow","height=500, width=800, top=300,left=500,toolbar=no,menubar=no, scrollbars=no, resizable=no,location=no,status=no");
+       }
+ </script>
+
+</body>
+</html>

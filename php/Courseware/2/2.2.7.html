@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>2.2.7 CSS 入门基础.</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+<link rel='stylesheet' type='text/css' href='../../css/shCoreEmacs.css'/>
+<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+<style>
+#honor li{
+	font-family: '微软雅黑';
+	font-size: 18px;
+	margin-top:30px; 
+	margin: 30px auto;
+}
+.pwz p{
+	margin: 10px 0px 20px 0px;
+	font-size: 18px;
+	cursor: pointer;
+}
+#foot{
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 1160px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+h2{
+	cursor: pointer;
+}
+ pre{
+ 	cursor: pointer;
+ }
+ img{
+ 	cursor: pointer;
+ }
+</style>
+</head>
+<body>
+<!--STICKER-->
+<div id="sticker"></div>
+
+<div id="wrapper">
+<a href="../../index.html"><img src="../../images/logos/logo.png" alt=""></a>
+<!--BIO TITLE-->
+<p id="title">第 2 章 PHP程序开发---前端技术</p>
+<h2 id="titleName" class="sectionHead">2.2.7  CSS 入门基础</h2>
+
+<!--BIO-->
+<div id="bio">
+	
+	<div id="honor">
+		<!-- 1 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_1">1丶认识 CSS</h2>
+	<div id="tc_1" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>　　CSS 的英文全名是 Cascading Style Sheets, 中文可翻译为串接式排版样式 , 并且 CSS2 规 范也于 1998 年 02 月通过 W3C 的审核与推荐 , 所以 CSS 并不是专为 XHTML 所设计的 ,CSS 还可以被其他标记语言拿来制作排版样本 , 如 HTML,XML 文件都可以应用 CSS, 来美化网页的设计 , 大家如果学会 CSS, 在 HTML,XHTML,XML 文件中都可以使用 .</p>
+	</div>
+	</div>
+<!-- 2 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_2">2丶传统 HTML 设计网页</h2>
+	<div id="tc_2" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>　　使用传统 HTML 控制标记来设计网页 , 在先天上就无法与排版样本来做比较 , 因为 HTM L并非完全着眼在网页排版的功能上 , 而这对 XHTML 而言更是如此 , 因为 XHTML 有意将原 先HTML 中有关网页版面的标记或属性遗弃不用 , 如 &lt;font>,&lt;center>,color,background,bgcolor 等等 , 所以对 XHTML 文件而言 , 其排版与显示的功能比 HTML 文件更弱 , 所以使用 XHTML 来设计网页更需要搭配 CSS 排版样本 .</p>
+	</div>
+	</div>
+	
+<!-- 3 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_3">3丶CSS 的特点</h2>
+	<div id="tc_3" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p><h4>HTML 排版时的缺点 :</h4></p>
+		<p>　　设置麻烦 , 修改麻烦 , 功能严重不足 .</p>
+		<p><h4>CSS 样式排版的优点 :</h4></p>
+		<p>　　排版属性功能完整 , 排版文件可以独立存在 , 可以共用排版文件.</p>
+		<p><h4>CSS 样式排版的分类 :</h4></p>
+		<p>　　行内排版样式,内嵌式排版样式,链接式排版</p>
+	</div>
+	</div>
+	
+<!-- 4 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_4">4丶CSS 的排版样式</h2>
+	<div id="tc_4" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p><h4>行内排版样式 :</h4></p>
+		<p>　　格式 :&lt; 标记名称 style= " 属性 1: 属性值 1; 属性 2: 属性值 2 "> … &lt;/ 标记名称 ></p>
+		<div id="highlighter_519379" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">例&nbsp;:&lt;p&nbsp;style=&nbsp;</code><code class="php string">"&nbsp;font-size:20pt;color:red;text-align:center&nbsp;"</code>&nbsp;<code class="php plain">&gt;&nbsp;排版样式&nbsp;&lt;/p&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　排版专用标记 :&lt;div> 与 &lt;span></p>
+		<p>　　　这两个标签都是用来设置涵盖一个区块为主 . 区块就是表示一行 以上的数据 . 如果没有一样 , 则 &lt;span> 与 &lt;/span> 该数据显示前后都不会跳行 </p>
+		<p><h4>内嵌式排版样本 :</h4></p>
+		<p>　　　内嵌式排版中所有的样式定义都必须在 &lt;style>..&lt;/style> 之间 , 而 &lt;style>..&lt;/style>又必须在 &lt;head>..&lt;/head> 之间 .</p>
+		<p>　　　与其功能 , 又可以分为三种:</p>
+		<p>　　　　1. 标记定义型，2. class 定义型，3. id 定义型</p>
+		<p>　　　标记定义型格式 :</p>
+		<div id="highlighter_872198" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;head&gt;</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;style&nbsp;type=&nbsp;</code><code class="php string">"&nbsp;text/css&nbsp;"</code>&nbsp;<code class="php plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">标记名称&nbsp;{&nbsp;属性&nbsp;1:&nbsp;属性值&nbsp;1;&nbsp;属性&nbsp;2:&nbsp;属性值&nbsp;2;}</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">标记名称&nbsp;{&nbsp;属性&nbsp;1:&nbsp;属性值&nbsp;2;&nbsp;属性&nbsp;2:&nbsp;属性值&nbsp;2;}</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;/style&gt;</code></div><div class="line number6 index5 alt1"><code class="php plain">&lt;/head&gt;</code></div><div class="line number7 index6 alt2"><code class="php plain">&lt;body&gt;</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;&nbsp;标记名称&nbsp;&gt;&nbsp;…&nbsp;&lt;/&nbsp;标记名称&nbsp;&gt;</code></div><div class="line number9 index8 alt2"><code class="php plain">&lt;/body&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　　class 定义型格式 :</p>
+		<div id="highlighter_144890" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;head&gt;</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;style&nbsp;type=&nbsp;</code><code class="php string">"&nbsp;text/css&nbsp;"</code>&nbsp;<code class="php plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">.&nbsp;定义名称&nbsp;{&nbsp;属性&nbsp;1:&nbsp;属性值&nbsp;1;&nbsp;属性&nbsp;2:&nbsp;属性值&nbsp;2;}</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">.&nbsp;定义名称&nbsp;1,.&nbsp;定义名称&nbsp;2{&nbsp;属性&nbsp;1:&nbsp;属性值&nbsp;1;&nbsp;属性&nbsp;2:&nbsp;属性值&nbsp;2;}</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;/style&gt;</code></div><div class="line number6 index5 alt1"><code class="php plain">&lt;/head&gt;</code></div><div class="line number7 index6 alt2"><code class="php plain">&lt;body&gt;</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;&nbsp;标记名称&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;</code><code class="php string">"&nbsp;定义名称&nbsp;"</code>&nbsp;<code class="php plain">&gt;&nbsp;…&nbsp;&lt;/&nbsp;标记名称&nbsp;&gt;</code></div><div class="line number9 index8 alt2"><code class="php plain">&lt;/body&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　　id 定义型格式</p>
+		<div id="highlighter_895907" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php spaces">&nbsp;</code><code class="php plain">&lt;head&gt;</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;&nbsp;style&gt;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">#&nbsp;定义名称&nbsp;{&nbsp;属性&nbsp;1:&nbsp;属性值&nbsp;1;&nbsp;属性&nbsp;2:&nbsp;属性值&nbsp;2;}</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">#&nbsp;定义名称&nbsp;1,#&nbsp;定义名称&nbsp;2{&nbsp;属性&nbsp;1:&nbsp;属性值&nbsp;1;&nbsp;属性&nbsp;2:&nbsp;属性值&nbsp;2;}</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;&nbsp;/style&gt;</code></div><div class="line number6 index5 alt1"><code class="php plain">&lt;&nbsp;/head&gt;</code></div><div class="line number7 index6 alt2"><code class="php plain">&lt;&nbsp;body&gt;</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;&nbsp;&nbsp;标记名称&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;</code><code class="php string">"&nbsp;定义名称&nbsp;"</code>&nbsp;<code class="php plain">&gt;&nbsp;…&nbsp;&lt;&nbsp;/&nbsp;标记名称&nbsp;&gt;</code></div><div class="line number9 index8 alt2"><code class="php plain">&lt;&nbsp;/body&gt;</code></div></div></td></tr></tbody></table></div>
+		<p><h4>" 行内 " 和 " 内嵌式 " 排版定义的优先级 :</h4></p>
+		<p>　　CSS 规定 , 范围越小 , 优先级越高 .</p>
+		<p>　　由小到大排列 :</p>
+		<p>　　　1. 行内</p>
+		<p>　　　2. class 和 id 定义型</p>
+		<p>　　　3. 标记定义行</p>
+		<p>　　id 的优先级高于 class 级 .</p>
+		<p><h4>外部排版样式定义 :</h4></p>
+		<p>　　独立的样式排版 :</p>
+		<p>　　　标记名称 { 属性 1: 属性值 1; 属性 2: 属性值 2;}</p>
+		<p>　　　. 定义名称 { 属性 1: 属性值 1; 属性 2: 属性值 2;}</p>
+		<p>　　在 &lt;head> … &lt;/head> 之间使用 &lt;link></p>
+		<p>　　格式 :</p>
+		<div id="highlighter_277634" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;head&gt;</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;link&nbsp;rel=&nbsp;</code><code class="php string">"&nbsp;stylesheet&nbsp;"</code>&nbsp;<code class="php plain">type=&nbsp;</code><code class="php string">"&nbsp;text/css&nbsp;"</code>&nbsp;<code class="php plain">href=URL&nbsp;/&gt;</code></div><div class="line number3 index2 alt2"><code class="php plain">&lt;/head&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　在 &lt;head> … &lt;/head> 之间使用 import</p>
+		<p>　　格式：</p>
+		<div id="highlighter_981492" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;head&gt;</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;style&nbsp;type=</code><code class="php string">"text/css"</code><code class="php plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">@import&nbsp;</code><code class="php string">"style.css"</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;/style&gt;</code></div><div class="line number5 index4 alt2"><code class="php plain">&lt;/head&gt;</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	
+<!-- 5 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_5">5丶作业</h2>
+	<div id="tc_5" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>明白以及了解CSS的特点</p>
+		<p>练习css的几种排版方式</p>
+		<p>说出CSS的优先级</p>
+		<p>写出外联css文件的方法</p>
+	</div>
+	</div>
+
+</div>
+
+	<p id="foot"><a href="../2/2.2.6.html">上一节</a>　　<a href="../../index.html">首　页</a>　　<a href="../2/2.2.8.html">下一节</a></p>
+</div><!--end bio-->
+
+
+
+
+
+<!--COPYRIGHT-->
+<div id="copyright">&copy; PHP教学课件，By徐东生 </div>
+
+<!--SCRIPTS-->
+<script src="../../js/jquery-1.7.1.js"></script>
+<script src="../../js/prettyPhoto.js"></script>
+<script src="../../js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".title_white_r").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("st", "tc");
+                $(id).toggle();
+            });
+            $(".info").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("bt", "nr");
+                $(id).toggle();
+            });
+        });
+       function tc(val){
+       	window.open(val,"newwindow","height=500, width=800, top=300,left=500,toolbar=no,menubar=no, scrollbars=no, resizable=no,location=no,status=no");
+       }
+ </script>
+
+</body>
+</html>

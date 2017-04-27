@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+		function Person(name, age)
+		{
+		       this.age = age;
+		       this.name = name;
+		       this.say = sayFunc;
+		}
+		function sayFunc()
+		{
+		      alert(this.name+" : "+this.age);
+		}
+		var person1 = new Person("张三", 18);
+		person1.say();
+		var person2 = new Person("李四",20);
+		person2.say();
+	</script>
+
+</body>
+</html>

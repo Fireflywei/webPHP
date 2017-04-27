@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>rules</title>
+  <script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+</head>
+<body>
+	<p><b>注释：</b>rules 属性无法在 Internet Explorer、Chrome 或者 Safari 中正确地显示。</p>
+<p>写法：</p>
+<pre>
+	&lt;table rules="rows">
+  &lt;tr>
+    &lt;th>Month&lt;/th>
+    &lt;th>Savings&lt;/th>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>January&lt;/td>
+    &lt;td>$100&lt;/td>
+  &lt;/tr>
+&lt;/table>
+</pre>
+<p>Table with rules="rows":</p>
+<table rules="rows">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
+<p>Table with rules="cols":</p>
+<table rules="cols">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
+<p>Table with rules="all":</p>
+<table rules="all">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+</body>
+</html>

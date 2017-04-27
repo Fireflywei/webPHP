@@ -1,0 +1,152 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>2.2.11 CSS区块、浮动、定位、溢出、滚动条.</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/shCoreEmacs.css" type="text/css" media="screen" />
+<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+<style>
+#honor li{
+	font-family: '微软雅黑';
+	font-size: 18px;
+	margin-top:30px; 
+	margin: 30px auto;
+}
+.pwz p{
+	margin: 10px 0px 20px 0px;
+	font-size: 18px;
+	cursor: pointer;
+}
+#foot{
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 1160px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+h2{
+	cursor: pointer;
+}
+ pre{
+ 	cursor: pointer;
+ }
+ img{
+ 	cursor: pointer;
+ }
+</style>
+</head>
+<body>
+<!--STICKER-->
+<div id="sticker"></div>
+
+<div id="wrapper">
+<a href="../../index.html"><img src="../../images/logos/logo.png" alt=""></a>
+<!--BIO TITLE-->
+<p id="title">第 2 章 PHP程序开发---前端技术</p>
+<h2 id="titleName" class="sectionHead">2.2.11  CSS区块、浮动、定位、溢出、滚动条</h2>
+
+<!--BIO-->
+<div id="bio">
+	
+	<div id="honor">
+		<!-- 1 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_1">1丶CSS 中区块的使用</h2>
+	<div id="tc_1" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_588895" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">属性名称&nbsp;&nbsp; 属性值&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="php plain">width&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;像素&nbsp;/&nbsp;百分比&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 区块的宽度</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">auto</code></div><div class="line number5 index4 alt2"><code class="php plain">height&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;像素&nbsp;/&nbsp;百分比&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 区块的&nbsp;高度</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">auto</code></div><div class="line number7 index6 alt2"><code class="php plain">min-height&nbsp;&nbsp;&nbsp;&nbsp; 像素&nbsp;/&nbsp;百分比&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 区块最小高度</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">auto</code></div><div class="line number9 index8 alt2"><code class="php plain">max-height&nbsp;&nbsp;&nbsp;&nbsp; 像素&nbsp;/&nbsp;百分比&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 区块最大高度</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">auto</code></div><div class="line number11 index10 alt2"><code class="php plain">min-width&nbsp; 像素&nbsp;/&nbsp;百分比&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 区块最小宽度</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">auto</code></div><div class="line number13 index12 alt2"><code class="php plain">max-width&nbsp; 像素&nbsp;/&nbsp;百分比&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 区块最大宽度</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">auto</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+<!-- 2 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_2">2丶CSS 中浮动的使用</h2>
+	<div id="tc_2" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_816703" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">属性名称&nbsp;&nbsp;&nbsp; 属性值 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明</code></div><div class="line number2 index1 alt1"><code class="php plain">float&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none&nbsp;&nbsp; &nbsp;&nbsp;正常显示</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">left&nbsp;&nbsp;&nbsp;&nbsp; 左浮动</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">right&nbsp;&nbsp;&nbsp; 右浮动</code></div><div class="line number5 index4 alt2"><code class="php plain">clear&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;none&nbsp;&nbsp;&nbsp; 允许两边浮动</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">left&nbsp;&nbsp; 不允许左边浮动</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">right&nbsp;&nbsp;&nbsp; 不允许右边浮动</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">both&nbsp;&nbsp;&nbsp;&nbsp; 不允许两边浮动</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	
+<!-- 3 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_3">3丶CSS 中定位的使用</h2>
+	<div id="tc_3" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_84793" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">属性名称&nbsp;&nbsp;&nbsp; 属性值 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明</code></div><div class="line number2 index1 alt1"><code class="php plain">position&nbsp;&nbsp; relative&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设置区块基准点为左上角</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">absolute&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;置网页的为基准点左上</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php keyword">static</code>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code class="php plain">无设置</code></div><div class="line number5 index4 alt2"><code class="php plain">left&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;auto&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以基准点定位在左边</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">像素/百分比&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;定位在左边</code></div><div class="line number7 index6 alt2"><code class="php plain">top&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;auto&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以&nbsp;基准点定位在上边</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">像素/百分比&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;定位在上边</code></div><div class="line number9 index8 alt2"><code class="php plain">right&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;auto&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以&nbsp;基准点定位在&nbsp;右&nbsp;边</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">像素/百分比&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;定位在&nbsp;右边</code></div><div class="line number11 index10 alt2"><code class="php plain">bottom&nbsp;&nbsp;&nbsp;&nbsp; auto&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;以&nbsp;基准点定位在&nbsp;下&nbsp;边</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">像素/百分比&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;定位在&nbsp;下边</code></div><div class="line number13 index12 alt2"><code class="php plain">z-index&nbsp;&nbsp;&nbsp; auto&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;自动调整高度</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">数字&nbsp;&nbsp;&nbsp;&nbsp; 数字越大越往上层</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	
+<!-- 4 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_4">4丶 CSS 中溢出的使用
+</h2>
+	<div id="tc_4" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_180976" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">属性名称&nbsp;&nbsp; 属性值&nbsp;&nbsp;&nbsp; 说明</code></div><div class="line number2 index1 alt1"><code class="php plain">overflow&nbsp;&nbsp; visible&nbsp;&nbsp;&nbsp; 不剪切内容也不添加滚动条</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">auto&nbsp;&nbsp;&nbsp;&nbsp; 在必需时对象内容才会被裁切或显示滚动条</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">hidden&nbsp;&nbsp; 不显示超过对象尺寸的内容</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">scroll&nbsp;&nbsp;&nbsp;&nbsp; 总是显示滚动条</code></div><div class="line number6 index5 alt1"><code class="php plain">overflow-x&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp;同上&nbsp;)</code></div><div class="line number7 index6 alt2"><code class="php plain">overflow-y&nbsp;&nbsp;&nbsp;&nbsp; (&nbsp;同上&nbsp;)</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	<!-- 5 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_5">5丶CSS 中滚动条的使用
+</h2>
+	<div id="tc_5" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_338536" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">属性名称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;属性值&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明</code></div><div class="line number2 index1 alt1"><code class="php plain">scrollbar-3dlight-color&nbsp;&nbsp;&nbsp; 颜色&nbsp;/&nbsp;十六进制&nbsp;&nbsp;&nbsp; 滚动条亮边框</code></div><div class="line number3 index2 alt2"><code class="php plain">scrollbar-highlight-color&nbsp; 颜色&nbsp;/&nbsp;十六进制&nbsp;&nbsp;&nbsp; 滚动条&nbsp;3D&nbsp;界面亮边</code></div><div class="line number4 index3 alt1"><code class="php plain">scrollbar-face-color&nbsp;&nbsp; 颜色&nbsp;/&nbsp;十六进制&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;滚动条&nbsp;3D&nbsp;表面</code></div><div class="line number5 index4 alt2"><code class="php plain">scrollbar-arrow-color&nbsp; 颜色&nbsp;/&nbsp;十六进制&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;滚动条方向箭头</code></div><div class="line number6 index5 alt1"><code class="php plain">scrollbar-shadow-color&nbsp;&nbsp;&nbsp;&nbsp; 颜色&nbsp;/&nbsp;十六进制&nbsp;&nbsp;&nbsp; 滚动条&nbsp;3D&nbsp;暗边</code></div><div class="line number7 index6 alt2"><code class="php plain">scrollbar-darkshadow-color&nbsp;颜色&nbsp;/&nbsp;十六进制&nbsp;&nbsp;&nbsp; 滚动条暗边框</code></div><div class="line number8 index7 alt1"><code class="php plain">scrollbar-base-color&nbsp;&nbsp; 颜色&nbsp;/&nbsp;十六进制&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;滚动条基准颜色</code></div><div class="line number9 index8 alt2"><code class="php plain">scrollbar-track-color&nbsp; 颜色&nbsp;/&nbsp;十六进制&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;滚动条的拖动区域</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	<!-- 6 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_6">6丶作业</h2>
+	<div id="tc_6" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>练习以上所有属性</p>
+	</div>
+	</div>
+</div>
+
+	<p id="foot"><a href="../2/2.2.10.html">上一节</a>　　<a href="../../index.html">首　页</a>　　<a href="../2/2.2.12.html">下一节</a></p>
+</div><!--end bio-->
+
+
+
+
+
+<!--COPYRIGHT-->
+<div id="copyright">&copy; PHP教学课件，By徐东生 </div>
+
+<!--SCRIPTS-->
+<script src="../../js/jquery-1.7.1.js"></script>
+<script src="../../js/prettyPhoto.js"></script>
+<script src="../../js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".title_white_r").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("st", "tc");
+                $(id).toggle();
+            });
+            $(".info").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("bt", "nr");
+                $(id).toggle();
+            });
+        });
+       function tc(val){
+       	window.open(val,"newwindow","height=500, width=800, top=300,left=500,toolbar=no,menubar=no, scrollbars=no, resizable=no,location=no,status=no");
+       }
+ </script>
+
+</body>
+</html>

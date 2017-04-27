@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>九九乘法表</title>
+</head>
+<body>
+	<script>
+		for(var i=1;i<=9;i++){
+			for(var j=1;j<=i;j++){
+			var b =i * j;
+			if((i==3 && j==3) || (i==4 && j==3)){
+				document.write(" "+j + "x" + i + "=" + b + "&nbsp;" + "&nbsp;");
+			}
+			else{
+				document.write(j + "x" + i + "=" + b + "&nbsp;" + "&nbsp;");
+			}
+		}//i 表示行 j表示列 当条件不满足时 跳出里层的循环  继续往下执行
+		document.write("<br>");
+	}
+	</script>
+</body>
+</html>

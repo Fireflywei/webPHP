@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>&lt;ol>&lt;/ol></title>
+  <script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+</head>
+<body>
+	<p>任何主流浏览器都不支持 compact 属性。</p>
+	<img src="../images/plqd/compact.png" alt="">
+		<br>显示效果：<ol compact="compact">
+  			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+		</ol>
+		<pre>
+代码：	&lt;ol compact="compact">
+  			&lt;li>Coffee&lt;/li>
+  			&lt;li>Tea&lt;/li>
+  			&lt;li>Milk&lt;/li>
+		&lt;/ol>
+		</pre>
+<p>在 HTML 4.01 中，不赞成 compact 属性；在 XHTML 1.0 Strict DTD 中，不支持 compact 属性。请使用 CSS 代替。</p>
+<p>reversed 属性</p>
+<ol reversed>
+  <li>咖啡</li>
+  <li>牛奶</li>
+  <li>茶</li>
+</ol>
+<pre>
+&lt;ol reversed>
+  &lt;li>咖啡&lt;/li>
+  &lt;li>牛奶&lt;/li>
+  &lt;li>茶&lt;/li>
+&lt;/ol>
+</pre>
+<p><strong>注释：</strong>目前只有 Chrome 和 Safari 6 支持 ol 元素的 reversed 属性。</p>
+<img src="../images/plqd/star.png" alt="">
+<ol start="50">
+  <li>咖啡</li>
+  <li>牛奶</li>
+  <li>茶</li>
+</ol>
+
+<ol type="I" start="50">
+  <li>咖啡</li>
+  <li>牛奶</li>
+  <li>茶</li>
+</ol>
+<pre>
+	&lt;ol start="50">
+  &lt;li>咖啡&lt;/li>
+  &lt;li>牛奶&lt;/li>
+  &lt;li>茶&lt;/li>
+&lt;/ol>
+
+&lt;ol type="I" start="50">
+  &lt;li>咖啡&lt;/li>
+  &lt;li>牛奶&lt;/li>
+  &lt;li>茶&lt;/li>
+&lt;/ol>
+</pre>
+<img src="../images/plqd/oltype.png" alt="">
+<ol type="I">
+   <li>HTML</li>
+   <li>XHTML</li>
+   <li>CSS</li>
+</ol>
+<pre>
+	&lt;ol type="I">
+   &lt;li>HTML&lt;/li>
+   &lt;li>XHTML&lt;/li>
+   &lt;li>CSS&lt;/li>
+&lt;/ol>
+</pre>
+<p>在 HTML 4.01 中，不赞成 type 属性；在 XHTML 1.0 Strict DTD 中，不支持 type 属性。请使用 CSS 代替。</p>
+</body>
+</html>

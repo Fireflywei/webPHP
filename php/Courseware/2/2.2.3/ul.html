@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>&lt;ul>&lt;/ul>属性</title>
+  <script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+</head>
+<body>
+	<p>任何主流浏览器都不支持 compact 属性。</p>
+	<img src="../images/plqd/compact.png" alt="">
+		<br>显示效果：<ul compact="compact">
+  			<li>Coffee</li>
+  			<li>Tea</li>
+  			<li>Milk</li>
+		</ul>
+		<pre>
+代码：	&lt;ul compact="compact">
+  			&lt;li>Coffee&lt;/li>
+  			&lt;li>Tea&lt;/li>
+  			&lt;li>Milk&lt;/li>
+		&lt;/ul>
+		</pre>
+<p>在 HTML 4.01 中，不赞成 compact 属性；在 XHTML 1.0 Strict DTD 中，不支持 compact 属性。请使用 CSS 代替。</p>
+<img src="../images/plqd/ulvalue.png" alt="">
+<ul type="square">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<ul type="circle">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<pre>
+&lt;ul type="square">
+  &lt;li>Coffee&lt;/li>
+  &lt;li>Tea&lt;/li>
+  &lt;li>Milk&lt;/li>
+&lt;/ul>
+&lt;ul type="circle">
+  &lt;li>Coffee&lt;/li>
+  &lt;li>Tea&lt;/li>
+  &lt;li>Milk&lt;/li>
+&lt;/ul>
+</pre>
+<p>在 HTML 4.01 中，不赞成 type 属性；在 XHTML 1.0 Strict DTD 中，不支持 type 属性。请使用 CSS 代替。</p>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>1.2 教学目标</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+<style>
+	#bio p {
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 1160px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+	
+}
+</style>
+</head>
+<body>
+
+<!--STICKER-->
+<div id="sticker"></div>
+
+<div id="wrapper">
+<a href="/index.html"><img src="../../images/logos/logo.png" alt=""></a>
+<!--BIO TITLE-->
+<p id="title">第 1 章 PHP程序开发---概述</p>
+<h2 id="titleName" class="sectionHead">1.2 教学目标</h2>
+
+<!--BIO-->
+<div id="bio">
+	<p>　　学习互联网产品开发流程，达到或高于一般互联网企业技术人员的要求标准，即：熟悉DIV+CSS、JQuery，掌握PHP+MYSQL技术，熟悉OOP思想，掌握ThinkPHP框架及互联网产品开发流程。</p>
+	<p><a href="1.1.html">上一节</a>　　<a href="../../index.html">首　页</a>　　<a href="../2/2.1.html">下一节</a></p>
+</div><!--end bio-->
+
+
+
+
+
+<!--COPYRIGHT-->
+<div id="copyright">&copy; PHP教学课件，By徐东生 </div>
+
+<!--SCRIPTS-->
+<script src="../../js/jquery-1.7.1.js"></script>
+<script src="../../js/prettyPhoto.js"></script>
+<script src="../../js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".title_white_r").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("st", "tc");
+                $(id).toggle();
+            });
+        });
+ </script>
+
+</body>
+</html>

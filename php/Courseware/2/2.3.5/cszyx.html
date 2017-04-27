@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var a = Math.round(Math.random()*10)+10;  //Math.round()取整   Math.random(）随机数
+		 var c = prompt("规则：输入一个数字，接近你要猜的数字","0") ;
+		for (var i = 0; i <= 5; i++) {
+
+			if (a > c) {
+			alert('你猜的数字比答案小!');
+			}else if (a < c) {
+			alert('你猜的数字比答案大!');
+			}else if (a = c) {
+			alert('恭喜你猜对了!正确答案是'+a);
+			break;
+			}else if (i = 5) {
+			alert('最多猜5次哦!正确答案是'+a);
+			break;
+			}
+			
+			 c = prompt("输入一个数字，接近你要猜的数字",c) ;
+		}
+		alert('欢迎再次玩猜字游戏！');
+
+		
+	// for (var i = 1; i < 20;i++) {
+	// 	//var c = prompt("输入一个字符，接近你要猜的数字","A") ;
+	// 	alert(i);
+	// };
+		
+	</script>
+</body>
+</html>

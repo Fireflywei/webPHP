@@ -1,0 +1,161 @@
+GD库使用:
+	
+	graphic device,图像工具库
+
+	在PHP5 中，动态图象的处理要比以前容易得多。PHP5 在php.ini 文件中包含了GD 扩展包，只需去掉GD 扩展包的相应注释就可以正常使用了。PHP5 包含的GD 库正是升级的GD2 库，其中包含支持真彩图像处理的一些有用的JPG 功能。	一般生成的图形，通过PHP 的文档格式存放，但可以通过HTML 的图片插入方式SRC来直接获取动态图形。比如，验证码、水印、微缩图等。
+	
+	创建图像(一):
+
+		一般生成的图形，通过PHP 的文档格式存放，但可以通过HTML 的图片插入方式SRC来直接获取动态图形。比如，验证码、水印、微缩图等。	创建图像的一般流程：1).设定标头，告诉浏览器你要生成的MIME 类型。2).创建一个图像区域，以后的操作都将基于此图像区域。3).在空白图像区域绘制填充背景。4).在背景上绘制图形轮廓输入文本。5).输出最终图形。6).清除所有资源。7).其他页面调用图像。
+
+     <?php
+	header('Content-Type: image/png');//设定标头指定MIME 输出类型	$im = imagecreate(200,200);//创建一个空白的图像区域
+	$blue = imagecolorallocate($im,0,102,255);
+	//imagefill($im, 0, 0,$blue);	//在空白图像区域绘制填充背景
+	$white = imagecolorallocate($im,255,255,255);
+	imageline($im, 0, 0, 200, 200, $white);	imageline($im, 200, 0, 0, 200, $white);	imagestring($im, 5, 80, 20, "Mr.Lee", $white);
+	//在背景上绘制图形轮廓输入文本
+	imagepng($im);		//输出最终图形
+	imagedestroy($im);		//清除所有资源
+      ?>
+	
+
+	创建图像(二)：
+
+		
+		1、建立新图：int imagecreate(int x_size, int y_size); 
+说明:本函数用来建立一张全空的图形。参数 x_size、y_size 为图形的尺寸，单位为像素 (pixel)。
+例: $im = imagecreate(400,100);匹配颜色：int imagecolorallocate(int im, int red, int green, int blue);说明:本函数用来匹配图形的颜色，供其它绘图函数使用。参数 im 表示图形的 handle。参数 red、green、blue 是色彩三原色。
+例: $yellow = ImageColorAllocate($im, 255,255,128);
+
+
+	2、header	
+		header(“Content-type: image/gif”);//输出gif图像				header(“Content-type: image/jpeg”);//输出jpeg图像	
+		header(“Content-type: image/png”);//输出png图像输出字符int imagechar(int im, int font, int x, int y, string c, int col);
+
+ 说明: 本函数用来书写字符。原点坐标 (0,0) 为图片的左上角，参数 font 表示字体的大小，从最小的 1 起，参数 x、y 是写入字元的坐标值，参数 c 为欲写出的字元，参数 col 为字的颜色。参数 im 表示图形的 handle。	
+例:		imagechar($im,4,1,1,’A’,$white);
+	
+	3、输出字符串	
+int imagestring(int im, int font, int x, int y, string s, int col);	
+说明:本函数在图片上绘出字符串。参数 font 为字形，设为 1 到 5 表示使用内定字形。参数 x、y 为字串起点坐标。字符串的内容放在参数 s 上。参数 col 表示字串的颜色。	
+例:imagestring($im, 5, 4, 10, "Graph TEST!", $white);绘制矩形	imageRectangle($im,x1,y1,x2,y2,$color);	
+说明：在图片上绘出矩形。参数 x1、y1 及 x2、y2 分别为矩形对角线的坐标。参数 col 表示矩形边框的颜色。	
+例:imageRectangle($im.10,10,40,40,$white);
+
+
+	4、矩形区域着色	
+int imagefilledrectangle(im, x1, y1, x2, y2, col); 	
+说明：将图片的封闭矩形区域着色。参数 x1、y1 及 x2、y2 分别为矩形对角线的坐标。参数 col 表示欲涂上的颜色。		
+例:imagefilledrectangle($im, 10,10, 40, 40, $back);
+
+
+	5、绘制弧线	
+int imagearc(im, cx, cy, w, h, s, e, col); 	
+说明：用来画弧线。原点坐标 (0,0) 为图片的左上角，参数 cx、cy 为椭圆心坐标，参数 w 为水平轴长，参数 h 为垂直轴长，参数 s 及 e 分别为起始角与结束角，参数 col 为弧线的颜色。参数 im表示图形的 handle。		
+例:imagearc($im, 200, 15, 20, 20, 35, 190, $white);
+
+
+	6、绘制直线	
+imageline ($im, x1, y1, x2, y2, color)	
+说明：在图形上画出一条实线。从 x1、y1 连接到 x2、y2，原点(0,0) 为图形的左上角。参数 col 为实线的颜色。 		
+例:imageline($im, 1, 1, 350, 25, $yellow);绘制点int imagesetpixel($im,x, y, col);	
+说明：可在图片上绘出一点。参数 x、y 为欲绘点的坐标，参数col 表示该点的颜色。		
+例:imagesetpixel($im,300,50,$yellow); 
+
+
+	创建图像(二)最终创建的图像代码：
+
+
+
+		<?php
+		header('Content-Type: image/gif');		$im = imagecreate(400,100);	      
+	 	//创建一个空白的图像区域
+		$black =ImageColorAllocate($im,0,0,0);		
+		$yellow =ImageColorAllocate($im, 255, 255,128);
+		//在空白图像区域绘制填充背景		$white = ImageColorAllocate($im,255,255,255);
+		imageline($im, 1, 1, 350, 25, $yellow);
+		imagearc($im, 200, 15, 20, 20,35,190, $white);
+		imagestring($im, 5, 4, 10, "Mr.Lee", $white);
+		//在背景上绘制图形轮廓输入文本	
+		ImageGif($im);		//输出最终图形
+		ImageDestroy($im);		//清除所有资源	
+		?>
+	
+
+
+
+	书写验证码：
+		<?php		session_start();//生成验证码图片
+		Header("Content-type:image/PNG");
+		$im = imagecreate(44, 18);// 画一张指定宽高的图片
+		$back = imagecolorallocate($im, 245, 245, 245);
+		// 定义背景颜色		imagefill($im, 0, 0, $back);
+		//把背景颜色填充到刚刚画出来的图片中
+		$vcodes = "";		// srand((double)microtime() * 1000000);
+		//生成4位数字
+		for($i = 0; $i < 4; $i++){			$font = imagecolorallocate($im, rand(100, 255), 			   rand(0, 100), rand(100, 255)); // 生成随机颜色
+			$authnum = rand(1, 9);
+			$vcodes .= $authnum;
+			imagestring($im, 5, 2 + $i * 10, 1, $authnum,$font);
+		}
+		$_SESSION['VCODE'] = $vcodes;
+		for($i=0;$i<100;$i++) { 
+			//加入干扰象素
+			$randcolor = imagecolorallocate($im, rand(0, 255), 			rand(0,255), rand(0, 255));
+			imagesetpixel($im, rand()%70, rand()%30,$randcolor); 
+			// 画像素点函数
+		}
+		imagepng($im);		imagedestroy($im);
+		?>
+
+
+	PHP的GD库函数大全：
+		
+
+			函数 	        		说明
+
+
+GetImageSize(string filename, array [imageinfo]); 取得图片的大小[即长与宽]
+int ImageArc(int im, int cx, int cy, int w, int h, int s, int e, int col); 	画弧线
+int ImageChar(int im, int font, int x, int y, string c, int col); 写出横向字符
+int ImageCharup(int im, int font, int x, int y, string c, int col);写出竖式字符
+int ImageColorTransparent(int im, int [col]); 	指定透明背景色
+int ImageCopyResized(int dst_im, int src_im, int dstX, int dstY, int srcX, int srcY, int dstW, int dstH, int srcW, int srcH); 	复制新图并调整大小
+int ImageCreate(int x_size, int y_size); 	建立新图
+int ImageDashedLine(int im, int x1, int y1, int x2, int y2, int col); 	绘虚线
+int ImageDestroy(int im); 	结束图形
+int ImageFill(int im, int x, int y, int col); 	图形着色
+int ImageFilledPolygon(int im, array points, int num_points, int col);多边形区域着色
+int ImageFilledRectangle(int im, int x1, int y1, int x2, int y2, int col); 	矩形区域着色
+int ImageFillToBorder(int im, int x, int y, int border, int col);指定颜色区域内着色
+int ImageFontHeight(int font); 	取得字型的高度
+int ImageFontWidth(int font); 	取得字型的宽度
+int ImageInterlace(int im, int [interlace]); 	使用交错式显示与否
+int ImageLine(int im, int x1, int y1, int x2, int y2, int col); 绘实线
+int ImageLoadFont(string file); 	载入点阵字型
+int ImagePolygon(int im, array points, int num_points, int col); 绘多边形
+int ImageRectangle(int im, int x1, int y1, int x2, int y2, int col); 绘矩形
+int ImageSetPixel(int im, int x, int y, int col); 	绘点
+int ImageString(int im, int font, int x, int y, string s, int col); 	绘横式字符串
+int ImageStringUp(int im, int font, int x, int y, string s, int col); 	绘直式字符串
+int ImageSX(int im); 	取得图片的宽度
+int ImageSY(int im); 	取得图片的高度
+array ImageTTFBBox(int size, int angle, string fontfile, string text); 	计算 TTF 文字所占区域
+array ImageTTFText(int im, int size, int angle, int x, int y, int col, string fontfile, string text); 	写 TTF 文字到图中
+int ImageColorAt(int im, int x, int y); 	取得图中指定点颜色的索引值
+int ImageColorClosest(int im, int red, int green, int blue); 计算色表中与指定颜色最接近者
+int ImageColorExact(int im, int red, int green, int blue);计算色表上指定颜色索引值
+int ImageColorResolve(int im, int red, int green, int blue); 计算色表上指定或最接近颜色的索引值
+boolean ImageColorSet(int im, int index, int red, int green, int blue); 	设定色表上指定索引的颜色
+array ImageColorsForIndex(int im, int index); 	取得色表上指定索引的颜色
+int ImageColorsTotal(int im); 	计算图的颜色数
+int ImagePSLoadFont(string filename); 	载入 PostScript 字型
+void ImagePSFreeFont(int fontindex); 	卸下 PostScript 字型
+int ImagePSEncodeFont(string encodingfile); 	PostScript 字型转成向量字
+array ImagePSText(int image, string text, int font, int size, int foreground, int background, int x, int y, int space, int tightness, float angle, int antialias_steps); 	写 PostScript 文字到图中
+array ImagePSBBox(string text, int font, int size, int space, int width, float angle); 	计算 PostScript 文字所占区域
+int ImageCreateFromPng(string filename); 	取出 PNG 图型
+int ImagePng(int im, string [filename]); 	建立 PNG 图型
+int ImageCreateFromGif(string filename); 	取出 GIF 图型
+int ImageGif(int im, string [filename]); 	建立 GIF 图型

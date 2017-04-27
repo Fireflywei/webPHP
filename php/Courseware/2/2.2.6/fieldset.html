@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>fieldset</title>
+  <script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+</head>
+<body>
+	<textarea name="" id="" cols="80" rows="10"><form>
+  <fieldset>
+    <legend>健康信息</legend>
+    身高：<input type="text" />
+    体重：<input type="text" />
+  </fieldset>
+</form>
+
+<p>如果表单周围没有边框，说明您的浏览器太老了。</p></textarea>
+<fieldset>
+    <legend>健康信息</legend>
+    身高：<input type="text" />
+    体重：<input type="text" />
+  </fieldset>
+</form>
+
+<p>如果表单周围没有边框，说明您的浏览器太老了。</p>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>2.2.15 响应式布局.</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/shCoreEmacs.css" type="text/css" media="screen" />
+<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+<style>
+#honor li{
+	font-family: '微软雅黑';
+	font-size: 18px;
+	margin-top:30px; 
+	margin: 30px auto;
+}
+.pwz p{
+	margin: 10px 0px 20px 0px;
+	font-size: 18px;
+	cursor: pointer;
+}
+#foot{
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 1160px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+h2{
+	cursor: pointer;
+}
+ pre{
+ 	cursor: pointer;
+ }
+ img{
+ 	cursor: pointer;
+ }
+</style>
+</head>
+<body>
+<!--STICKER-->
+<div id="sticker"></div>
+
+<div id="wrapper">
+<a href="../../index.html"><img src="../../images/logos/logo.png" alt=""></a>
+<!--BIO TITLE-->
+<p id="title">第 2 章 PHP程序开发---前端技术</p>
+<h2 id="titleName" class="sectionHead">2.2.15  响应式布局</h2>
+
+<!--BIO-->
+<div id="bio">
+	
+	<div id="honor">
+		<!-- 1 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_1">1丶什么是响应式布局?</h2>
+	<div id="tc_1" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p></p>
+		<pre>
+			<p><h3>
+	    响应式布局是Ethan Marcotte在2010年5月份提出的一个概念，简而言之，就是一个网站能够兼容多个终端——而不是为每个终端做一个特定的版本。
+
+      这个概念是为解决移动互联网浏览而诞生的。响应式布局可以为不同终端的用户提供更加舒适的界面和更好的用户体验，而且随着目前大屏幕移动设备的普及，用大势所趋来形容也不为过。
+
+ 随着越来越多的设计师采用这个技术，我们不仅看到很多的创新，还看到了一些成形的模式。
+</h3></p>
+</pre>
+	</div>
+	</div>
+<!-- 2 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_2">2丶响应式布局有哪些优点和缺点?</h2>
+	<div id="tc_2" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p><h2>优点：</h2></p>
+		<pre>
+		<p><h3>
+		面对不同分辨率设备灵活性强
+		能够快捷解决多设备显示适应问题
+		</h3></p>
+		</pre>
+		<p><h2>缺点：</h2></p>
+		<pre>
+		<p><h3>
+		兼容各种设备工作量大，效率低下
+		代码累赘，会出现隐藏无用的元素，加载时间加长
+		其实这是一种折衷性质的设计解决方案，多方面因素影响而达不到最佳效果
+		一定程度上改变了网站原有的布局结构，会出现用户混淆的情况
+		</h3></p>
+		</pre>
+	</div>
+	</div>
+<!-- 3 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_3">3丶响应式布局该怎么设计</h2>
+	<div id="tc_3" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p></p>
+		<p><h2>1、 如何解决不同设备间的兼容问题？</h2></p>
+		<div id="highlighter_786681" class="syntaxhighlighter  xml"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">CSS3中的Media&nbsp;Query（媒介查询）可以解决这个问题。</code></div></div></td></tr></tbody></table></div>
+		<p><h2>2、media query能够获取哪些值?</h2></p>
+		<div id="highlighter_278162" class="syntaxhighlighter  xml"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">设备的宽和高device-width，device-heigth显示屏幕/触觉设备。</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">渲染窗口的宽和高width，heigth显示屏幕/触觉设备。</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">设备的手持方向，横向还是竖向orientation(portrait|lanscape)和打印机等。</code></div><div class="line number6 index5 alt1">&nbsp;</div><div class="line number7 index6 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">画面比例aspect-ratio点阵打印机等。</code></div><div class="line number8 index7 alt1">&nbsp;</div><div class="line number9 index8 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">设备比例device-aspect-ratio-点阵打印机等。</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">对象颜色或颜色列表color，color-index显示屏幕。</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">设备的分辨率resolution</code></div></div></td></tr></tbody></table></div>
+		<p><h2>3、语法结构及用法</h2></p>
+		<div id="highlighter_552405" class="syntaxhighlighter  xml"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">语法：@media&nbsp;设备名&nbsp;only&nbsp;(选取条件)&nbsp;not&nbsp;(选取条件)&nbsp;and(设备选取条件)，设备二{sRules}</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="xml plain">用法：</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">a、示例一：在link中使用@media：</code></div><div class="line number6 index5 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">&lt;</code><code class="xml keyword">link</code>&nbsp;<code class="xml color1">rel</code><code class="xml plain">=</code><code class="xml string">"stylesheet"</code>&nbsp;<code class="xml color1">type</code><code class="xml plain">=</code><code class="xml string">"text/css"</code>&nbsp;<code class="xml plain">media="only&nbsp;screen&nbsp;and&nbsp;(max-width:&nbsp;480px),</code></div><div class="line number7 index6 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">only&nbsp;screen&nbsp;and&nbsp;(max-device-width:&nbsp;480px)"&nbsp;</code><code class="xml color1">href</code><code class="xml plain">=</code><code class="xml string">"link.css"</code>&nbsp;<code class="xml color1">rel</code><code class="xml plain">=</code><code class="xml string">"external&nbsp;nofollow"</code>&nbsp;<code class="xml plain">/&gt;</code></div><div class="line number8 index7 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">上面使用中only可省略，限定于计算机显示器，第一个条件max-width是指渲染界面最大宽度，第二个条件max-device-width是指设备最大宽度。</code></div><div class="line number9 index8 alt2">&nbsp;</div><div class="line number10 index9 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">b、在样式表中内嵌@media：</code></div><div class="line number11 index10 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">@media&nbsp;(min-device-width:1024px)&nbsp;and&nbsp;(max-width:989px),screen&nbsp;and&nbsp;(max-device-width:480px),(max-device-width:480px)</code></div><div class="line number12 index11 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">and&nbsp;(orientation:landscape),(min-device-width:480px)&nbsp;and&nbsp;(max-device-width:1024px)&nbsp;and&nbsp;(orientation:portrait)&nbsp;{srules}</code></div><div class="line number13 index12 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">设置了电脑显示器分辨率（宽度）大于或等于1024px（并且最大可见宽度为989px）；屏宽在480px及其以下手持设备；屏宽在480px以及横向</code></div><div class="line number14 index13 alt1"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">（即480尺寸平行于地面）放置的手持设备；</code></div><div class="line number15 index14 alt2"><code class="xml spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="xml plain">屏宽大于或等于480px小于1024px以及&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;垂直放置设备的css样式。</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	
+<!-- 4 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_4">4丶实现响应式布局</h2>
+	<div id="tc_4" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<link rel='stylesheet' type='text/css' href='http://gaoliang.lanbing.org/styles/shCoreEmacs.css'/><div id="highlighter_805003" class="syntaxhighlighter  xml"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div><div class="line number32 index31 alt1">32</div><div class="line number33 index32 alt2">33</div><div class="line number34 index33 alt1">34</div><div class="line number35 index34 alt2">35</div><div class="line number36 index35 alt1">36</div><div class="line number37 index36 alt2">37</div><div class="line number38 index37 alt1">38</div><div class="line number39 index38 alt2">39</div><div class="line number40 index39 alt1">40</div><div class="line number41 index40 alt2">41</div><div class="line number42 index41 alt1">42</div><div class="line number43 index42 alt2">43</div><div class="line number44 index43 alt1">44</div><div class="line number45 index44 alt2">45</div><div class="line number46 index45 alt1">46</div><div class="line number47 index46 alt2">47</div><div class="line number48 index47 alt1">48</div><div class="line number49 index48 alt2">49</div><div class="line number50 index49 alt1">50</div><div class="line number51 index50 alt2">51</div><div class="line number52 index51 alt1">52</div><div class="line number53 index52 alt2">53</div><div class="line number54 index53 alt1">54</div><div class="line number55 index54 alt2">55</div><div class="line number56 index55 alt1">56</div><div class="line number57 index56 alt2">57</div><div class="line number58 index57 alt1">58</div><div class="line number59 index58 alt2">59</div><div class="line number60 index59 alt1">60</div><div class="line number61 index60 alt2">61</div><div class="line number62 index61 alt1">62</div><div class="line number63 index62 alt2">63</div><div class="line number64 index63 alt1">64</div><div class="line number65 index64 alt2">65</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="xml plain">&lt;!DOCTYPE&nbsp;html&gt;</code></div><div class="line number2 index1 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">html</code>&nbsp;<code class="xml color1">lang</code><code class="xml plain">=</code><code class="xml string">"en"</code><code class="xml plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">head</code><code class="xml plain">&gt;</code></div><div class="line number4 index3 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">meta</code>&nbsp;<code class="xml color1">charset</code><code class="xml plain">=</code><code class="xml string">"UTF-8"</code><code class="xml plain">&gt;</code></div><div class="line number5 index4 alt2"><code class="xml comments">&lt;!--&nbsp;必须加这句话&nbsp;</code></div><div class="line number6 index5 alt1"><code class="xml comments">width&nbsp;–&nbsp;viewport的宽度</code></div><div class="line number7 index6 alt2"><code class="xml comments">height&nbsp;–&nbsp;viewport的高度</code></div><div class="line number8 index7 alt1"><code class="xml comments">initial-scale&nbsp;–&nbsp;初始的缩放比例</code></div><div class="line number9 index8 alt2"><code class="xml comments">minimum-scale&nbsp;–&nbsp;允许用户缩放到的最小比例</code></div><div class="line number10 index9 alt1"><code class="xml comments">maximum-scale&nbsp;–&nbsp;允许用户缩放到的最大比例</code></div><div class="line number11 index10 alt2"><code class="xml comments">user-scalable&nbsp;–&nbsp;用户是否可以手动缩放</code></div><div class="line number12 index11 alt1"><code class="xml comments">--&gt;</code></div><div class="line number13 index12 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">meta</code>&nbsp;<code class="xml color1">name</code><code class="xml plain">=</code><code class="xml string">"viewport"</code>&nbsp;<code class="xml color1">content</code><code class="xml plain">=</code><code class="xml string">"width=device-width,&nbsp;initial-scale=1.0"</code><code class="xml plain">&gt;</code></div><div class="line number14 index13 alt1"><code class="xml comments">&lt;!--最后对于在IE浏览器中不支持media&nbsp;query的情况，我们可以使用Media&nbsp;Query&nbsp;JavaScript来解决，</code></div><div class="line number15 index14 alt2"><code class="xml comments">只需要在页面头部引用css3-mediaqueries.js即可&nbsp;--&gt;</code></div><div class="line number16 index15 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">script</code>&nbsp;<code class="xml color1">src</code><code class="xml plain">=</code><code class="xml string">"&lt;a&nbsp;href="</code><code class="xml plain"><a href="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js</a>"&gt;&lt;/</code><code class="xml keyword">script</code><code class="xml plain">"&gt;</code></div><div class="line number17 index16 alt2"><code class="xml plain"><a href="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js</a>"&gt;&lt;/</code><code class="xml keyword">script</code><code class="xml plain">&lt;/a&gt;&gt;</code></div><div class="line number18 index17 alt1"><code class="xml plain">&lt;</code><code class="xml keyword">title</code><code class="xml plain">&gt;Document&lt;/</code><code class="xml keyword">title</code><code class="xml plain">&gt;</code></div><div class="line number19 index18 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">style</code><code class="xml plain">&gt;</code></div><div class="line number20 index19 alt1"><code class="xml plain">/**</code></div><div class="line number21 index20 alt2"><code class="xml plain">设计思路很简单，首先先定义在标准浏览器下的固定宽度（假如标准浏览器的分辨率为1024px，那么我们设置宽为980px），</code></div><div class="line number22 index21 alt1"><code class="xml plain">然后用Media&nbsp;Query来监测浏览器的尺寸变化，当浏览器的分辨率小于1024px的时候，</code></div><div class="line number23 index22 alt2"><code class="xml plain">则通过Media&nbsp;Query预设的样式表来将页面的宽度设置为百分比显示，</code></div><div class="line number24 index23 alt1"><code class="xml plain">这样子页面的结构元素就会根据浏览器的的尺寸来进行相对应的调整。</code></div><div class="line number25 index24 alt2"><code class="xml plain">同理，当浏览器的可视区域改变到某个值（假如为650px）的时候，</code></div><div class="line number26 index25 alt1"><code class="xml plain">页面的结构元素根据Media&nbsp;Query预设的层叠样式表来进行相对应的调整。看看我们的例子：</code></div><div class="line number27 index26 alt2"><code class="xml plain">**/</code></div><div class="line number28 index27 alt1"><code class="xml plain">/*&nbsp;当浏览器的可视区域小于980px&nbsp;*/</code></div><div class="line number29 index28 alt2"><code class="xml plain">@media&nbsp;screen&nbsp;and&nbsp;(max-width:&nbsp;980px)&nbsp;{</code></div><div class="line number30 index29 alt1"><code class="xml plain">#wrap&nbsp;{width:&nbsp;90%;&nbsp;margin:0&nbsp;auto;}</code></div><div class="line number31 index30 alt2"><code class="xml plain">#content&nbsp;{width:&nbsp;60%;padding:&nbsp;5%;}</code></div><div class="line number32 index31 alt1"><code class="xml plain">#sidebar&nbsp;{width:&nbsp;30%;}</code></div><div class="line number33 index32 alt2"><code class="xml plain">#footer&nbsp;{padding:&nbsp;8%&nbsp;5%;margin-bottom:&nbsp;10px;}</code></div><div class="line number34 index33 alt1"><code class="xml plain">}</code></div><div class="line number35 index34 alt2"><code class="xml plain">/*&nbsp;当浏览器的可视区域小于650px&nbsp;*/</code></div><div class="line number36 index35 alt1"><code class="xml plain">@media&nbsp;screen&nbsp;and&nbsp;(max-width:&nbsp;650px)&nbsp;{</code></div><div class="line number37 index36 alt2"><code class="xml plain">#header&nbsp;{height:&nbsp;auto;}</code></div><div class="line number38 index37 alt1"><code class="xml plain">#searchform&nbsp;{position:&nbsp;absolute;top:&nbsp;5px;right:&nbsp;0;}</code></div><div class="line number39 index38 alt2"><code class="xml plain">#content&nbsp;{width:&nbsp;auto;&nbsp;float:&nbsp;none;&nbsp;margin:&nbsp;20px&nbsp;0;}</code></div><div class="line number40 index39 alt1"><code class="xml plain">#sidebar&nbsp;{width:&nbsp;100%;&nbsp;float:&nbsp;none;&nbsp;margin:&nbsp;0;}</code></div><div class="line number41 index40 alt2"><code class="xml plain">}</code></div><div class="line number42 index41 alt1"><code class="xml plain">/**&nbsp;为了更好的显示效果，我们往往还要格式化一些CSS属性的初始值：***/</code></div><div class="line number43 index42 alt2"><code class="xml plain">/*&nbsp;禁用iPhone中Safari的字号自动调整&nbsp;*/</code></div><div class="line number44 index43 alt1"><code class="xml plain">html&nbsp;{</code></div><div class="line number45 index44 alt2"><code class="xml plain">-webkit-text-size-adjust:&nbsp;none;</code></div><div class="line number46 index45 alt1"><code class="xml plain">}</code></div><div class="line number47 index46 alt2"><code class="xml plain">/*&nbsp;设置HTML5元素为块&nbsp;*/</code></div><div class="line number48 index47 alt1"><code class="xml plain">article,&nbsp;aside,&nbsp;details,&nbsp;figcaption,&nbsp;figure,&nbsp;footer,&nbsp;header,&nbsp;hgroup,&nbsp;menu,&nbsp;nav,&nbsp;section&nbsp;{</code></div><div class="line number49 index48 alt2"><code class="xml plain">display:&nbsp;block;</code></div><div class="line number50 index49 alt1"><code class="xml plain">}</code></div><div class="line number51 index50 alt2"><code class="xml plain">/*&nbsp;设置图片视频等自适应调整&nbsp;*/</code></div><div class="line number52 index51 alt1"><code class="xml plain">img&nbsp;{</code></div><div class="line number53 index52 alt2"><code class="xml plain">max-width:&nbsp;100%;</code></div><div class="line number54 index53 alt1"><code class="xml plain">height:&nbsp;auto;</code></div><div class="line number55 index54 alt2"><code class="xml plain">width:&nbsp;auto\9;&nbsp;/*&nbsp;ie8&nbsp;*/</code></div><div class="line number56 index55 alt1"><code class="xml plain">}</code></div><div class="line number57 index56 alt2"><code class="xml plain">.video&nbsp;embed,&nbsp;.video&nbsp;object,&nbsp;.video&nbsp;iframe&nbsp;{</code></div><div class="line number58 index57 alt1"><code class="xml plain">width:&nbsp;100%;</code></div><div class="line number59 index58 alt2"><code class="xml plain">height:&nbsp;auto;</code></div><div class="line number60 index59 alt1"><code class="xml plain">}</code></div><div class="line number61 index60 alt2"><code class="xml plain">&lt;/</code><code class="xml keyword">style</code><code class="xml plain">&gt;</code></div><div class="line number62 index61 alt1"><code class="xml plain">&lt;/</code><code class="xml keyword">head</code><code class="xml plain">&gt;</code></div><div class="line number63 index62 alt2"><code class="xml plain">&lt;</code><code class="xml keyword">body</code><code class="xml plain">&gt;</code></div><div class="line number64 index63 alt1"><code class="xml plain">&lt;/</code><code class="xml keyword">body</code><code class="xml plain">&gt;</code></div><div class="line number65 index64 alt2"><code class="xml plain">&lt;/</code><code class="xml keyword">html</code><code class="xml plain">&gt;</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+
+</div>
+
+	<p id="foot"><a href="../2/2.2.14.html">上一节</a>　　<a href="../../index.html">首　页</a>　　<a href="../2/2.3.1.html">下一节</a></p>
+</div><!--end bio-->
+
+
+
+
+
+<!--COPYRIGHT-->
+<div id="copyright">&copy; PHP教学课件，By徐东生 </div>
+
+<!--SCRIPTS-->
+<script src="../../js/jquery-1.7.1.js"></script>
+<script src="../../js/prettyPhoto.js"></script>
+<script src="../../js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".title_white_r").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("st", "tc");
+                $(id).toggle();
+            });
+            $(".info").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("bt", "nr");
+                $(id).toggle();
+            });
+        });
+       function tc(val){
+       	window.open(val,"newwindow","height=500, width=800, top=300,left=500,toolbar=no,menubar=no, scrollbars=no, resizable=no,location=no,status=no");
+       }
+ </script>
+
+</body>
+</html>

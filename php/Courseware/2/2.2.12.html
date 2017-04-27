@@ -1,0 +1,240 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>2.2.12 CSS定义选择器.</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/shCoreEmacs.css" type="text/css" media="screen" />
+<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+<style>
+#honor li{
+	font-family: '微软雅黑';
+	font-size: 18px;
+	margin-top:30px; 
+	margin: 30px auto;
+}
+.pwz p{
+	margin: 10px 0px 20px 0px;
+	font-size: 18px;
+	cursor: pointer;
+}
+#foot{
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 1160px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+h2{
+	cursor: pointer;
+}
+ pre{
+ 	cursor: pointer;
+ }
+ img{
+ 	cursor: pointer;
+ }
+</style>
+</head>
+<body>
+<!--STICKER-->
+<div id="sticker"></div>
+
+<div id="wrapper">
+<a href="../../index.html"><img src="../../images/logos/logo.png" alt=""></a>
+<!--BIO TITLE-->
+<p id="title">第 2 章 PHP程序开发---前端技术</p>
+<h2 id="titleName" class="sectionHead">2.2.12  CSS定义选择器</h2>
+
+<!--BIO-->
+<div id="bio">
+	
+	<div id="honor">
+		<!-- 1 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_1">1丶ID 与类</h2>
+	<div id="tc_1" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>　　选择器是用于控制页面设计的样式 . 即 ID 选择器何类选择器 .</p>
+		<p>　　一直以来 , 许多开发人员经常将 ID 与类混淆 , 或者不能正确的使用这两种选择器 , 或者简单的认为是一个代替另一个 . 这种认知是及其错误的 .</p>
+		<p><h3>(1). 应用 ID</h3></p>
+		<p>　　每个 ID 在一个页面中只能使用一次 , 作为某个元素的唯一标识符 . 一般情况下 ,ID 只用于页面的唯一元素 , 如页眉 , 主导航条 , 布局区块等 .</p>
+		<div id="highlighter_382540" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">示例&nbsp;:&lt;p&nbsp;id=&nbsp;</code><code class="php string">"&nbsp;hight&nbsp;light&nbsp;"</code>&nbsp;<code class="php plain">&gt;This&nbsp;paragraph&nbsp;has&nbsp;red&nbsp;text.&lt;/p&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　　相应的 CSS 代码 :</p>
+		<div id="highlighter_909072" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">#hight&nbsp;light{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">color:#FFFFFF;</code></div><div class="line number3 index2 alt2"><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>(2). 将 ID 与选择器结合</h3></p>
+		<div id="highlighter_401974" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">/*&nbsp;适合所有&nbsp;h2&nbsp;标题&nbsp;*/</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">h2&nbsp;{</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">color:#&nbsp;333;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">font-size:16px;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php comments">/*&nbsp;只适合&nbsp;title&nbsp;的&nbsp;h2&nbsp;标题&nbsp;*/</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">h2#tit&nbsp;le&nbsp;{</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">color:#&nbsp;eee;</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">相应的&nbsp;XHTML&nbsp;代码&nbsp;:&lt;h2&gt;Title&nbsp;Of&nbsp;My&nbsp;Article&lt;/h2&gt;</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;h2&nbsp;id=&nbsp;</code><code class="php string">"&nbsp;title&nbsp;"</code>&nbsp;<code class="php plain">&gt;Title&nbsp;Of&nbsp;My&nbsp;Article&lt;/h2&gt;</code></div></div></td></tr></tbody></table></div>
+		<p><h3>(3).ID 的使用场合</h3></p>
+		<p>　　对于每个 ID, 每个页面只能有一个元素使用该样式 , 因此 ID 应该为每个页面唯一存在并仅使用一次的元素不保留 </p>
+		<p><h3>(4). 避免使用 ID 的场合</h3></p>
+		<p>　　当一个以上的地方需要使用同一 CSS 规则时 , 不应该使用 ID.</p>
+		<p><h3>(5). 应用类</h3></p>
+		<p>　　类可以无限次的使用 , 因此它是应用 CSS 的非常灵活的方法 .</p>
+		<div id="highlighter_630008" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;p&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;</code><code class="php string">"&nbsp;hight&nbsp;light&nbsp;"</code>&nbsp;<code class="php plain">&gt;his&nbsp;paragraph&nbsp;has&nbsp;red&nbsp;text.&lt;/p&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　相关 CSS 代码 :</p>
+		<div id="highlighter_247827" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">.hightlight&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">color:FFFFFF;</code></div><div class="line number3 index2 alt2"><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>(6). 结合多个类和 ID</h3></p>
+		<p>　　范例 :</p>
+		<div id="highlighter_185548" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;ul&nbsp;id=&nbsp;</code><code class="php string">"drinks"</code>&nbsp;<code class="php plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;li&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;</code><code class="php string">"mix"</code><code class="php plain">&gt;Beer&lt;/li&gt;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;li&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;</code><code class="php string">"mix"</code><code class="php plain">&gt;Spirtis&lt;/li&gt;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;li&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;</code><code class="php string">"hot"</code><code class="php plain">&gt;Cola&lt;/li&gt;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;li&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;</code><code class="php string">"hot"</code><code class="php plain">&gt;Lemonade&lt;/li&gt;</code></div><div class="line number6 index5 alt1"><code class="php plain">&lt;/ul&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　相应的 CSS 代码 :</p>
+		<div id="highlighter_386376" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">ul#drinks&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">color:FF6600;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number4 index3 alt1"><code class="php plain">.mix&nbsp;{</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#&nbsp;999999;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number7 index6 alt2"><code class="php plain">.hot&nbsp;{</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#&nbsp;333333;</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>(7). 利用类改写基本样式 :</h3></p>
+		<div id="highlighter_342989" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">p{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#ff6600</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">.bleached&nbsp;{</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#ccc;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p>　　相应的 XHTML 代码 :</p>
+		<div id="highlighter_162996" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;p&gt;This&nbsp;paragraph&nbsp;has&nbsp;red&nbsp;text.&lt;/p&gt;</code></div><div class="line number2 index1 alt1"><code class="php plain">&lt;p&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;”&nbsp;bleached&nbsp;”&nbsp;&gt;This&nbsp;paragraph&nbsp;has&nbsp;red&nbsp;text.&lt;/p&gt;</code></div></div></td></tr></tbody></table></div>
+		<p><h3>(8). 直接将类链接到元素上</h3></p>
+		<div id="highlighter_883133" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">p.bleached&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">color:red;</code></div><div class="line number3 index2 alt2"><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+			<p>　　相应的 XHTML 代码 :</p>
+			<div id="highlighter_656536" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;p&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;</code><code class="php string">"&nbsp;bleached&nbsp;"</code>&nbsp;<code class="php plain">&gt;This&nbsp;paragraph&nbsp;has&nbsp;red&nbsp;text.&lt;/p&gt;</code></div></div></td></tr></tbody></table></div>
+		<p><h3>(9). 避免, 适合</h3></p>
+		<p>　　对于 class, 如果多次重复使用或者使用子类选择器，那么就选择 class ，如果是定 义唯一性的标记，比如布局，那么用 id 。</p>
+	</div>
+	</div>
+<!-- 2 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_2">2丶层叠</h2>
+	<div id="tc_2" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p><h3>(1). 外部链接实现层叠</h3></p>
+		<div id="highlighter_337917" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;link&nbsp;rel=&nbsp;</code><code class="php string">"stylesheet&nbsp;"</code><code class="php plain">type=&nbsp;</code><code class="php string">"text/css&nbsp;"</code><code class="php plain">href=&nbsp;</code><code class="php string">"css/one.css"</code>&nbsp;<code class="php plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="php plain">&lt;link&nbsp;rel=&nbsp;</code><code class="php string">"stylesheet&nbsp;"</code><code class="php plain">type=&nbsp;</code><code class="php string">"text/css&nbsp;"</code><code class="php plain">href=&nbsp;</code><code class="php string">"css/two.css"</code>&nbsp;<code class="php plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="php plain">&lt;link&nbsp;rel=&nbsp;</code><code class="php string">"stylesheet&nbsp;"</code><code class="php plain">type=&nbsp;</code><code class="php string">"text/css&nbsp;"</code><code class="php plain">href=&nbsp;</code><code class="php string">"css/three.css"</code>&nbsp;<code class="php plain">&gt;</code></div></div></td></tr></tbody></table></div>
+		<p><h3>(2). 导入样式实现层叠</h3></p>
+		<div id="highlighter_548336" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">@import&nbsp;url(&nbsp;</code><code class="php string">"one.css"</code>&nbsp;<code class="php plain">)</code></div><div class="line number2 index1 alt1"><code class="php plain">@import&nbsp;url(&nbsp;</code><code class="php string">"two.css"</code>&nbsp;<code class="php plain">)</code></div><div class="line number3 index2 alt2"><code class="php plain">@import&nbsp;url(&nbsp;</code><code class="php string">"three.css"</code>&nbsp;<code class="php plain">)</code></div></div></td></tr></tbody></table></div>
+		<p>注意点 : 必须牢记一个规则 , 越晚给的规则越重要 .</p>
+	</div>
+	</div>
+	
+<!-- 3 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_3">3丶分组</h2>
+	<div id="tc_3" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_385227" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">h1{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Font-family:&nbsp;隶书&nbsp;,&nbsp;宋体&nbsp;,&nbsp;楷体&nbsp;;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Line-height:&nbsp;140%;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#&nbsp;333;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number6 index5 alt1"><code class="php plain">h2{</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Font-family:&nbsp;隶书&nbsp;,&nbsp;宋体&nbsp;,&nbsp;楷体&nbsp;;</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Line-height:&nbsp;140%;</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#&nbsp;333;</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number12 index11 alt1"><code class="php plain">h3{</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Font-family:&nbsp;隶书&nbsp;,&nbsp;宋体&nbsp;,&nbsp;楷体&nbsp;;</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Line-height:&nbsp;140%;</code></div><div class="line number15 index14 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#&nbsp;333;</code></div><div class="line number16 index15 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p>分组后：</p>
+		<div id="highlighter_728560" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">h1,h2,h3{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Font-family:&nbsp;隶书&nbsp;,&nbsp;宋体&nbsp;,&nbsp;楷体&nbsp;;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Line-height:&nbsp;140%;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#&nbsp;333;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p>分组例外:</p>
+		<div id="highlighter_765603" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">h1{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Font-family:&nbsp;微软雅黑&nbsp;;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	
+<!-- 4 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_4">4丶继承
+</h2>
+	<div id="tc_4" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_774253" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">h1&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#&nbsp;333;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number4 index3 alt1"><code class="php plain">&lt;h1&gt;This&nbsp;is&nbsp;the&nbsp;greatest&nbsp;heading&nbsp;&lt;i&gt;in&nbsp;the&nbsp;world&lt;/i&gt;&lt;/h1&gt;</code></div><div class="line number5 index4 alt2"><code class="php plain">从&nbsp;BODY&nbsp;继承</code></div><div class="line number6 index5 alt1"><code class="php plain">Body&nbsp;{</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Margin:10px;</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Font-family:&nbsp;隶书</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Background:#000</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#fff;</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}&nbsp;</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	<!-- 5 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_5">5丶上下文选择
+</h2>
+	<div id="tc_5" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_792257" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">h1{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:&nbsp;#ccc;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number4 index3 alt1"><code class="php plain">i&nbsp;{</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#&nbsp;000;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">/*&nbsp;使用上下文选择</code></div><div class="line number8 index7 alt1"><code class="php plain">h1&nbsp;I&nbsp;{</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:#&nbsp;000;</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	<!-- 6 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_6">6丶子类选择器
+</h2>
+	<div id="tc_6" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_301544" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">.box&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">color:red;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number4 index3 alt1"><code class="php plain">.box1&nbsp;{</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">font-weight:bold;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number7 index6 alt2"><code class="php plain">.box2&nbsp;{</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">font-style:italic;</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number10 index9 alt1">&nbsp;</div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;div&nbsp;</code><code class="php keyword">class</code><code class="php plain">=</code><code class="php string">"box"</code><code class="php plain">&gt;Box&lt;/div&gt;</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;div&nbsp;</code><code class="php keyword">class</code><code class="php plain">=</code><code class="php string">"box&nbsp;box1"</code><code class="php plain">&gt;Box1&lt;/div&gt;</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;div&nbsp;</code><code class="php keyword">class</code><code class="php plain">=</code><code class="php string">"box&nbsp;box2"</code><code class="php plain">&gt;Box2&lt;/div&gt;</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	<!-- 7 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_7">7丶其他选择器
+</h2>
+	<div id="tc_7" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p><h3>(1). 类型选择器</h3></p>
+		<div id="highlighter_752058" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">p{color:black;}</code></div><div class="line number2 index1 alt1"><code class="php plain">a{text-decoration:underline;&nbsp;}</code></div><div class="line number3 index2 alt2"><code class="php plain">h1{font-weight:bold;}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>(2). 后代选择器</h3></p>
+		<div id="highlighter_718189" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">h2&nbsp;i{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">color:red;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number4 index3 alt1"><code class="php plain">li&nbsp;a{</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">text-decoration:none;</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number7 index6 alt2"><code class="php plain">#main&nbsp;h1{</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Color:red;</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>(3). 伪类</h3></p>
+		<pre>
+	<div id="highlighter_994019" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">a:link&nbsp;{&nbsp;color:blue;}</code></div><div class="line number2 index1 alt1"><code class="php plain">a:visited{color:green;}</code></div><div class="line number3 index2 alt2"><code class="php plain">a:hover,a:active{color:red;}</code></div><div class="line number4 index3 alt1"><code class="php plain">input:focus{background-color:yellow;}</code></div></div></td></tr></tbody></table></div>
+		</pre>
+		<p><h3>(4). 通用选择器</h3></p>
+		<div id="highlighter_352123" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">*{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding:0;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Margin:0;</code></div><div class="line number4 index3 alt1"><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>(5). 高级选择器</h3></p>
+		<p>高级选择器 , 目前支持还不太完善 , 所以 , 对于站点功能很重要的任何元素上 , 应该避免使用这些高级选择器 .</p>
+		<p><h3>1. 子选择器和相邻同胞选择器</h3></p>
+		<p><h4>子选择器</h4></p>
+		<div id="highlighter_903206" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">#nav&nbsp;&gt;&nbsp;li&nbsp;{background:url(bg.gif&nbsp;)&nbsp;no-repeat&nbsp;lef&nbsp;t&nbsp;top;}</code></div><div class="line number2 index1 alt1"><code class="php plain">&lt;ul&nbsp;id=</code><code class="php string">"nav"</code><code class="php plain">&gt;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;li&gt;Home&lt;/li&gt;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;li&gt;Server</code></div><div class="line number5 index4 alt2">&nbsp;</div><div class="line number6 index5 alt1"><code class="php plain">&lt;ul&gt;</code></div><div class="line number7 index6 alt2">&nbsp;</div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;li&gt;Development&lt;/li&gt;</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;li&gt;Consultancy&lt;/li&gt;</code></div><div class="line number10 index9 alt1"><code class="php plain">&lt;/ul&gt;</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;/li&gt;</code></div><div class="line number12 index11 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;li&gt;Contact&nbsp;Us&lt;/li&gt;</code></div><div class="line number13 index12 alt2"><code class="php plain">&lt;/ul&gt;</code></div></div></td></tr></tbody></table></div>
+		<p><h4>相邻同胞选择器 :</h4></p>
+		<div id="highlighter_373366" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">h1+p{font-weight:bold;}</code></div><div class="line number2 index1 alt1"><code class="php plain">&lt;h1&gt;Main&nbsp;Heading&lt;/h1&gt;</code></div><div class="line number3 index2 alt2"><code class="php plain">&lt;p&gt;First&nbsp;Paragraph&lt;/p&gt;</code></div><div class="line number4 index3 alt1"><code class="php plain">&lt;p&gt;Second&nbsp;Paragraph&lt;/p&gt;</code></div></div></td></tr></tbody></table></div>
+		<p><h3>2. 属性选择器</h3></p>
+		<div id="highlighter_784532" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;strong&nbsp;title=&nbsp;</code><code class="php string">"Cascading&nbsp;Style&nbsp;Sheets"</code>&nbsp;<code class="php plain">&gt;CSS&lt;/strong&gt;</code></div><div class="line number2 index1 alt1">&nbsp;</div><div class="line number3 index2 alt2"><code class="php plain">strong[title]&nbsp;{border-bottom:&nbsp;1px&nbsp;dotted&nbsp;#999;&nbsp;}</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="php plain">strong[title]:hover&nbsp;{cursor:help;background:#ccc}</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	<!-- 8 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_8">8丶结构与注释
+</h2>
+	<div id="tc_8" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_435913" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">/*body&nbsp;styles*/</code></div><div class="line number2 index1 alt1"><code class="php plain">body&nbsp;{</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Font-size:67.5%;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>添加结构性注释</h3></p>
+		<div id="highlighter_290135" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php comments">/*---------------------------------------------------</code></div><div class="line number2 index1 alt1"><code class="php comments">Version:&nbsp;1.1</code></div><div class="line number3 index2 alt2"><code class="php comments">Author:&nbsp;andy&nbsp;budd</code></div><div class="line number4 index3 alt1"><code class="php comments">Email:info@andybudd.com</code></div><div class="line number5 index4 alt2"><code class="php comments">Website:http:www.andybudd.com</code></div><div class="line number6 index5 alt1"><code class="php comments">-----------------------------------------------------*/</code></div></div></td></tr></tbody></table></div>
+		<p>布局结构：使用有意义的标记。</p>
+		<p>表格成了一种布局工具而不是显示数据的方式 , 人们使用块引用 (blockquote) 来添加空白而不是表示引用 .Web 很快就失去了意义 , 成了字体和表格标签的大杂烩 . 而现在我们可以使用 DIV+CSS 来控制布局 .</p>
+	</div>
+	</div>
+	<!-- 9 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_9">9丶作业</h2>
+	<div id="tc_9" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>复习以及巩固先前学习的知识</p>
+		<p>对前面css的格式以及写法规则进行补充</p>
+		<p>在作业中充分体现出css的注释，各种选择器的写法，以及继承，分组等</p>
+	</div>
+	</div>
+</div>
+
+	<p id="foot"><a href="../2/2.2.11.html">上一节</a>　　<a href="../../index.html">首　页</a>　　<a href="../2/2.2.13.html">下一节</a></p>
+</div><!--end bio-->
+
+
+
+
+
+<!--COPYRIGHT-->
+<div id="copyright">&copy; PHP教学课件，By徐东生 </div>
+
+<!--SCRIPTS-->
+<script src="../../js/jquery-1.7.1.js"></script>
+<script src="../../js/prettyPhoto.js"></script>
+<script src="../../js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".title_white_r").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("st", "tc");
+                $(id).toggle();
+            });
+            $(".info").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("bt", "nr");
+                $(id).toggle();
+            });
+        });
+       function tc(val){
+       	window.open(val,"newwindow","height=500, width=800, top=300,left=500,toolbar=no,menubar=no, scrollbars=no, resizable=no,location=no,status=no");
+       }
+ </script>
+
+</body>
+</html>

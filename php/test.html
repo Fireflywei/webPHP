@@ -1,0 +1,133 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<script src="./js/jquery-1.7.1.js"></script>
+
+	<script>
+		$(document).ready(
+			function (){
+				$("#username").bind(
+					"blur",//焦点失去时
+					function (){
+						//调用一个函数，检查用户名
+						page_checkUser($(this).val());
+						
+						//可以直接在这里写ajax请求，而不放在函数里面
+					}
+				)
+			}
+		)
+
+		//定义：表单提交前 每个提交域 检查的结果
+		var page_check={
+						'username':0,
+						'password':1
+						}
+
+		//在自定义函数里，用ajax检查用户名是否存在
+		function page_checkUser(username){
+			
+			//$.ajax是jquery的一个函数。
+			//用它可以进行ajax请求。
+			//它的参数是一个对象。
+			//除了以下写法，还有很多其他写法
+			$.ajax(
+					{
+						url: "http://127.0.0.1/ajax_check_username.php",//提交到哪个url。要能http访问的
+
+						type: "POST",//提交模式：post/get
+
+						data: {//提交哪些变量。
+								//若post模式，则 上述的url，使用$_POST['uname']接收
+								//若get模式，则 上述的url，使用$_GET['uname']接收
+								'username':username,//
+
+								'other':'其他一些数据',//当前不需要加
+								'tmp':Math.random() //产生随机数，防止有缓存影响。当前可不加
+							},
+
+						async: true,//true/false:异步(默认)/同步：
+									//异步，则等待服务端返回值时，当前页面不僵住
+									//同步，则等待服务端返回值时，当前僵住
+
+						dataType: "json",//服务端数据返回格式。包括：json/html/script/text/xml
+
+						success: function(data){//服务端 返回值的处理
+							//data 是服务端返回的数据
+							//这个data 可以是字符串/数组/对象等
+							//这是由于 服务端 当时发送数据时，定义好的
+
+							//当前是返回值是一个对象，有2个属性：
+							//code：代表状态码，当前请求的结果，用户名能否注册
+							//info：代表，无论请求的结果，中文说明是什么。为了给用户看
+
+						//！！！1.判断 请求结果，在业务上是否成功 
+							//通常这是必须的，
+							//除非你的这次ajax请求，不管业务是否成功
+							if(data.code<0){//若不能注册。可以写 data['code']
+								page_check.username=0;//对 提交域 检查的结果 变量赋值
+							}else{//若能注册
+								page_check.username=1;//对 提交域 检查的结果 变量赋值
+							}
+
+						//！！！2.调用另外一个函数处理页面效果
+							//通常这是必须的。可以直接在当前写，不用函数
+							//但必须有，除非你的这次ajax请求的结果，不需要给用户看
+							page_showInfo($("#username"),data);
+
+
+
+
+
+
+							//若返回的是字符串或数字，则可以这样测试下看看
+							//alert(data);
+
+							//若返回的是数组，则可以这样测试下看看看
+							//for(var i=0;i<data.length;i++){alert(data[i])} 
+
+
+							//若返回的是对象，则可以这样测试下看看看
+							//for(var key in data ){alert(data[key])} 
+
+
+
+							//alert(msg);
+							//test(msg);//调用其它函数
+							//异步时，不应该当前return，和如有函数时return
+							//if(msg2[0]==-1){
+							//	alert("用户名已经被注册");
+							//}
+						}
+
+
+						////////////其他的一些参数，可不用
+						//cache: false,//true/false:缓存(默认)/不缓存。可不填
+						//timeout:10000,//服务端多少 毫秒 不响应，算超时。可不填
+						//error:page_ajaxRetrunErr ,//出错时，使用什么函数处理。可不填
+					}
+				);
+		}
+
+
+		//处理页面效果
+		function page_showInfo(e){
+			var eShow=e.next(".showInfo");
+
+			if(eShow){
+				alert(1);
+			}else{
+				alert(2);
+			}
+		}
+
+	</script>
+</head>
+
+
+<body>
+
+用户名：<input id="username" name="username"><br>
+密码：<input type="password" id="password" name="password"><br>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>2.2.14 CSS 构造颜色、背景与图像.</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/shCoreEmacs.css" type="text/css" media="screen" />
+<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+<style>
+#honor li{
+	font-family: '微软雅黑';
+	font-size: 18px;
+	margin-top:30px; 
+	margin: 30px auto;
+}
+.pwz p{
+	margin: 10px 0px 20px 0px;
+	font-size: 18px;
+	cursor: pointer;
+}
+#foot{
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 1160px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+h2{
+	cursor: pointer;
+}
+ pre{
+ 	cursor: pointer;
+ }
+ img{
+ 	cursor: pointer;
+ }
+</style>
+</head>
+<body>
+<!--STICKER-->
+<div id="sticker"></div>
+
+<div id="wrapper">
+<a href="../../index.html"><img src="../../images/logos/logo.png" alt=""></a>
+<!--BIO TITLE-->
+<p id="title">第 2 章 PHP程序开发---前端技术</p>
+<h2 id="titleName" class="sectionHead">2.2.14  CSS 构造颜色、背景与图像</h2>
+
+<!--BIO-->
+<div id="bio">
+	
+	<div id="honor">
+		<!-- 1 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_1">1丶设定颜色</h2>
+	<div id="tc_1" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p><h3>1.红色的几种合法定义 ;</h3></p>
+		<pre>
+		#f00;
+		#ff0000;
+		Red;
+		Rgb(255,0,0);
+		Rgb(100%,0%,0%);
+		</pre>
+		<p><h3>2. 十六进制三元组</h3></p>
+		<pre>
+		第一个字节 : 红色的值 ;
+		第二个字节 : 绿色的值 ;
+		第三个字节 : 蓝色的值 ;
+		简化写法 :#cccccc 可写成 #ccc, #ff6633 可以写成 #f63
+		</pre>
+		<p><h3>3. 使用 17 种具名颜色</h3></p>
+		<pre>
+		黑色 (black) 000000
+		藏蓝色 (navy) 000080
+		绿色 (green) 008000
+		海蓝色 (teal) 008080
+		银色 (silver) 0c0c0c
+		蓝色 (blue) 0000ff
+		酸橙色 (lime) 00ff00
+		浅绿色 (aqua) 00ffff
+		绛紫色 (maroon) 800000
+		紫色 (purple) 800080
+		橄榄绿 (olive) 808000
+		灰色 (gray) 808080
+		红色 (red) ff0000
+		紫红色 (fuchsia) ff00ff
+		黄色 (yellow) ffff00
+		橙色 (orange) ffa500
+		白色 (white) ffffff
+</pre>
+	<p><h3>4 . 使用 span 更好的控制文本中局部区域的文本</h3></p>
+	<p><span> 文本内容 </span></p>
+	<p><h3>5. 使用 display 属性提供区块转换</h3></p>
+	<p>inline,block,none</p>
+	</div>
+	</div>
+<!-- 2 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_2">2丶背景使用</h2>
+	<div id="tc_2" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p><h3>1:背景图象渐变的制作</h3></p>
+		<div id="highlighter_604134" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">Body&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Background:&nbsp;#ccc&nbsp;url(bg.gif)&nbsp;rpeat-x;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>2:给一个区块加上一个背景</h3></p>
+		<div id="highlighter_469342" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">#branding&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Width:&nbsp;700px;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Height:&nbsp;200px;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Background:&nbsp;url(branding.gif&nbsp;)&nbsp;no-repeat;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p><h3>3:给标题加上一个小图标</h3></p>
+		<div id="highlighter_183113" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">H1&nbsp;{</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding-lef&nbsp;t:&nbsp;20px;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Background:&nbsp;url&nbsp;(bullet.gif)&nbsp;no-repeat&nbsp;lef&nbsp;t&nbsp;center;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+		<p>如果希望使用百分比而不使用关键字 , 则 0 50% 这样就实现了垂直居中</p>
+		<p><h3>4:圆顶角</h3></p>
+		<div id="highlighter_520726" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;div&nbsp;</code><code class="php keyword">class</code><code class="php plain">=&nbsp;”&nbsp;box&nbsp;”&nbsp;&gt;</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;h2&gt;Headline&lt;/h2&gt;</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;p&gt;Content&lt;/p&gt;</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">&lt;/div&gt;</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">.box&nbsp;{</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Width:&nbsp;418px;</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Background:&nbsp;#ccc&nbsp;url(bottom.gif&nbsp;)&nbsp;no-repeat&nbsp;lef&nbsp;t&nbsp;bottom;</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">.box&nbsp;h2&nbsp;{</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Background:ur&nbsp;l(top.gif)&nbsp;no-repeat&nbsp;lef&nbsp;t&nbsp;top;</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number12 index11 alt1"><code class="php plain">如果不希望碰到边界&nbsp;,&nbsp;加上填充&nbsp;.</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">.box&nbsp;h2&nbsp;{</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding:10px&nbsp;20px&nbsp;0&nbsp;20px;</code></div><div class="line number15 index14 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number16 index15 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">.box&nbsp;p&nbsp;{</code></div><div class="line number17 index16 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">Padding:0&nbsp;20px&nbsp;10px&nbsp;20px;</code></div><div class="line number18 index17 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+	<p><h3>5:简单的 CSS 阴影效果</h3></p>
+	<div id="highlighter_657855" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;div&nbsp;</code><code class="php keyword">class</code><code class="php plain">=</code><code class="php string">"img-wrapper"</code><code class="php plain">&gt;</code></div><div class="line number2 index1 alt1"><code class="php plain">&lt;img&nbsp;src=</code><code class="php string">"images/dunstan.jpg"</code>&nbsp;<code class="php plain">width=</code><code class="php string">"300"</code>&nbsp;<code class="php plain">height=</code><code class="php string">"300"</code>&nbsp;<code class="php plain">alt=</code><code class="php string">"Dunstan&nbsp;Orchard"</code>&nbsp;<code class="php plain">/&gt;</code></div><div class="line number3 index2 alt2"><code class="php plain">&lt;/div&gt;</code></div><div class="line number4 index3 alt1">&nbsp;</div><div class="line number5 index4 alt2"><code class="php plain">.img-wrapper&nbsp;{</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">background:&nbsp;url(images/shadow.gif)&nbsp;no-repeat&nbsp;bottom&nbsp;right;</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">clear:&nbsp;right;</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">float:&nbsp;lef&nbsp;t;</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">position:&nbsp;relat&nbsp;ive;</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">margin:&nbsp;10px&nbsp;0&nbsp;0&nbsp;10px;</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">}</code></div><div class="line number12 index11 alt1">&nbsp;</div><div class="line number13 index12 alt2"><code class="php plain">.img-wrapper&nbsp;img&nbsp;{</code></div><div class="line number14 index13 alt1"><code class="php plain">display:&nbsp;block;&nbsp;</code><code class="php comments">/*&nbsp;这个属性到列表再进行解释&nbsp;*/</code></div><div class="line number15 index14 alt2"><code class="php plain">margin:&nbsp;-5px&nbsp;5px&nbsp;5px&nbsp;-5px;</code></div><div class="line number16 index15 alt1"><code class="php plain">position:&nbsp;relat&nbsp;ive;</code></div><div class="line number17 index16 alt2"><code class="php plain">}</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+
+	
+</div>
+
+	<p id="foot"><a href="../2/2.2.13.html">上一节</a>　　<a href="../../index.html">首　页</a>　　<a href="../2/2.2.15.html">下一节</a></p>
+</div><!--end bio-->
+
+
+
+
+
+<!--COPYRIGHT-->
+<div id="copyright">&copy; PHP教学课件，By徐东生 </div>
+
+<!--SCRIPTS-->
+<script src="../../js/jquery-1.7.1.js"></script>
+<script src="../../js/prettyPhoto.js"></script>
+<script src="../../js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".title_white_r").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("st", "tc");
+                $(id).toggle();
+            });
+            $(".info").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("bt", "nr");
+                $(id).toggle();
+            });
+        });
+       function tc(val){
+       	window.open(val,"newwindow","height=500, width=800, top=300,left=500,toolbar=no,menubar=no, scrollbars=no, resizable=no,location=no,status=no");
+       }
+ </script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>do..while</title>
+	<STYLE type="text/css">
+  .myfont
+  {
+  font-size:150;
+  color:#c99c96;
+  font-family:Webdings  //产生埃及图像的特殊字体
+  }
+</STYLE>
+</head>
+<body>
+	<script>
+			var x="",i=0;
+			do
+			  {
+			  x=x + "这个数字是  " + i + "<br>";
+			  i++;
+			  }
+			while (i<5)  {
+			document.write(x);
+			}
+</script>
+
+
+
+<script language="JavaScript">
+document.write("<H3>每个字符都对应一个漂亮的埃及图像</H3>");
+do
+{
+   var c = prompt("输入一个字符，输入N 或n停止","A") ;
+   document.write ("<font class=myfont >"+c+"</font>");
+ }while (c !="N" && c !="n");
+</SCRIPT>
+
+</body>
+</html>

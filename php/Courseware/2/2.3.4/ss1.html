@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+</head>
+<body>
+		<SCRIPT LANGUAGE = "JavaScript">
+			var x=100;
+			var y;
+			var z;
+			document.write("<H2>竞拍SONY数码相机 600万像素" +x+"$起价</H2>");
+			y=prompt("加多少银子？","1");  
+			z=x+parseFloat( y );  
+			alert("您最终的出价\n"+z+"$");  //”\n”用于换行显示
+			/*
+			parseFloat( )函数将字符串转换为float数据
+			parseInt( )函数将字符串转换为int数据
+			如果转换失败，返回NaN值(not a number)
+			*/
+		</SCRIPT>
+
+		<pre>
+		&lt;SCRIPT LANGUAGE = "JavaScript">
+			var x=100;
+			var y;
+			var z;
+			document.write("&lt;H2>竞拍SONY数码相机 600万像素" +x+"$起价&lt;/H2>");
+			y=prompt("加多少银子？","1");  
+			z=x+parseFloat( y );  
+			alert("您最终的出价\n"+z+"$");  //”\n”用于换行显示
+		&lt;/SCRIPT>
+			/*
+			parseFloat( )函数将字符串转换为float数据
+			parseInt( )函数将字符串转换为int数据
+			如果转换失败，返回NaN值(not a number)
+			*/
+
+		</pre>
+</body>
+</html>

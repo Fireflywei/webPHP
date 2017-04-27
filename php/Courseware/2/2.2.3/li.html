@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>&lt;li>...&lt;/li></title>
+	<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+</head>
+<body>
+	<p>语法：&lt;li type="value"></p>
+	<p>有序列表的属性值：</p>
+	<img src="../images/plqd/olli.png" alt="">
+	<p>无序列表的属性值：</p>
+	<img src="../images/plqd/ulli.png" alt="">
+
+	<p>示例：</p>
+	<ol>
+  		<li>Coffee</li>
+  		<li type="a">Tea</li>
+  		<li>Milk</li>
+	</ol>
+	<ul>
+  		<li>Coffee</li>
+  		<li type="square">Tea</li>
+  		<li>Milk</li>
+	</ul>
+	<pre>
+		&lt;ol>
+  		&lt;li>Coffee&lt;/li>
+  		&lt;li type="a">Tea&lt;/li>
+  		&lt;li>Milk&lt;/li>
+	&lt;/ol>
+	&lt;ul>
+  		&lt;li>Coffee&lt;/li>
+  		&lt;li type="square">Tea&lt;/li>
+  		&lt;li>Milk&lt;/li>
+	&lt;/ul>
+	</pre>
+<p>在 HTML 4.01 中，不赞成 type 属性；在 XHTML 1.0 Strict DTD 中，不支持 type 属性。请使用 CSS 代替。</p>
+</body>
+</html>

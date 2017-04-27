@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>2.2.2 HTML的标签.</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+<link rel='stylesheet' type='text/css' href='../../css/shCoreEmacs.css'/>
+<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+<style>
+#honor li{
+	font-family: '微软雅黑';
+	font-size: 18px;
+	margin-top:30px; 
+	margin: 30px auto;
+}
+.pwz p{
+	margin: 10px 0px 20px 0px;
+	font-size: 18px;
+	cursor: pointer;
+}
+#foot{
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 1160px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+h2{
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+<!--STICKER-->
+<div id="sticker"></div>
+
+<div id="wrapper">
+<a href="/index.html"><img src="../../images/logos/logo.png" alt=""></a>
+<!--BIO TITLE-->
+<p id="title">第 2 章 PHP程序开发---前端技术</p>
+<h2 id="titleName" class="sectionHead">2.2.2  常用HTML标签元素结合及使用</h2>
+
+<!--BIO-->
+<div id="bio">
+	<div id="honor">
+		<!-- 1 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_1">1丶HTML控制标记的格式</h2>
+	<div id="tc_1" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p class="info" id="bt_1">　　1: &lt;标记名称&gt;  单一型，无设置值。如，&lt;br&gt;</p>
+		<p id="nr_1" style="display:none;">　　这里演示<br>br换行</p>
+		<p class="info" id="bt_2">　　2: &lt;标记名称 属性="属性值"&gt; 单一型，有设置值。如，&lt;hr width="80%"&gt;</p>
+		<div id="nr_2" style="display:none;"><p >　　这里演示hr直线<hr width="80%"></p></div>
+		<p>　　3: &lt;标记名称>...&lt;/标记名称>  对称型，无设置值。如，&lt;title&gt;...&lt;/title&gt;</p>
+		<p class="info" id="bt_3">　　4: &lt;标记名称 属性="属性值"&gt;...&lt;/标记名称&gt; 对称型，有属性的。如，</p>
+		<div id="highlighter_119674" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;body&nbsp;bgcolor=</code><code class="php string">"red"</code><code class="php plain">&gt;...&lt;body&gt;&nbsp;设置网页背景为red</code></div><div class="line number2 index1 alt1"><code class="php plain">&lt;font&nbsp;size=</code><code class="php string">"7"</code><code class="php plain">&gt;&lt;/font&gt;&nbsp;设置字体大小为7</code></div></div></td></tr></tbody></table></div>
+		<div id="nr_3" style="display:none;"><p >　　 <font size="7">这里演示font</font> </p></div>
+	</div>
+	</div>
+<!-- 2 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_4">2丶常用的控制标记</h2>
+	<div id="tc_4" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p class="info" id="bt_4">　　1: 换行  &lt;br&gt;  格式:&lt;br&gt; 无属性值</p>
+		<div id="nr_4" style="display:none;">　　　 这里演示<br>br换行 　　<span style="color:red;">我没有属性参数</span> </div>
+		<p class="info" id="bt_5">　　2: 段落 &lt;p&gt; 格式&lt;p align="排序方式"&gt;...</p></p>
+		<div id="nr_5" style="display:none;width:600px;">
+			<p><img  onclick='tc("bq/p.html");' src="images/cybq/p.png" alt=""></p>
+		</div>
+		<p class="info" id="bt_6">　　3: 水平直线 &lt;hr> 格式&lt;hr&gt; </p>
+		<div id="nr_6" style="display:none;">
+			<p><img  onclick='tc("bq/hr.html");' src="images/cybq/hr.png" alt=""></p>
+		</div>
+		<p class="info" id="bt_7"> 　　4: 向中对齐&lt;center>...&lt;/center&gt;  (被废弃的标签)</p>
+		<div id="nr_7" style="display:none;">
+			<p onclick='tc("bq/center.html");'>　　　对其所包括的文本进行水平居中。</p>
+		</div>
+		<p onclick='tc("bq/bg.html");'>　　5: 背景色与文字设置 </p>
+		<p class="info" id="bt_8">　　6: 标题文字设置</p>
+		<div id="nr_8" style="display:none;">
+			<p><img  onclick='tc("bq/h.html");' src="images/cybq/h.png" alt=""></p>
+		</div>
+		<p class="info" id="bt_9">　　7: 特殊字符设置</p>
+		<div id="nr_9" style="display:none;">
+			<p>　　　特殊字符前要加"&amp;"符号，< : &amp;lt; > : &amp;gt; 空格 :&amp;nbsp;&amp;:&amp;&quot;</p>
+		</div>
+		<p class="info" id="bt_10">　　8: HTML的备注</p>
+		<div id="nr_10" style="display:none;">
+		<p>　　　　&lt;!-- 内容--></p>
+		</div>
+		<p onclick='tc("bq/zfkz.html");'>　　9: 实体字符控制标记</p>
+		<p onclick='tc("bq/yy.html");'>　　10:语意字符控制</p>
+		<p class="info" id="bt_11">　　11:&lt;font&gt;字体控制</p>
+		<div id="nr_11" style="display:none;">
+			<p><img  onclick='tc("bq/font.html");' src="images/cybq/font.png" alt=""></p>
+		</div>
+		<p class="info" id="bt_12">　　12:格式化</p>
+		<div id="nr_12" style="display:none;">
+			<p onclick='tc("bq/pre.html");'>格式化</p>
+		</div>
+		<p class="info" id="bt_13">　　13:引用文本</p>
+		<div id="nr_13" style="display:none;">
+			<p><img  onclick='tc("bq/blockquote.html");' src="images/cybq/blockquote.png" alt="" /></p>
+		</div>
+	</div>
+	</div>
+	<!-- 3 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_3">3丶作业</h2>
+	<div id="tc_3" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>练习课堂上面介绍的所有标签以及特殊字符，并能综合运用</p>
+	</div>
+	</div>
+
+	</div>
+	<p id="foot"><a href="../2/2.2.1.html">上一节</a>　　<a href="../../index.html">首　页</a>　　<a href="../2/2.2.3.html">下一节</a></p>
+</div><!--end bio-->
+
+
+
+
+
+<!--COPYRIGHT-->
+<div id="copyright">&copy; PHP教学课件，By徐东生 </div>
+
+<!--SCRIPTS-->
+<script src="../../js/jquery-1.7.1.js"></script>
+<script src="../../js/prettyPhoto.js"></script>
+<script src="../../js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".title_white_r").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("st", "tc");
+                $(id).toggle();
+            });
+            $(".info").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("bt", "nr");
+                $(id).toggle();
+            });
+        });
+       function tc(val){
+       	window.open(val,"newwindow","height=500, width=800, top=300,left=500,toolbar=no,menubar=no, scrollbars=no, resizable=no,location=no,status=no");
+       }
+ </script>
+
+</body>
+</html>

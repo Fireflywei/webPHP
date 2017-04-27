@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>2.2.1 HTML的基本结构.</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+<link rel='stylesheet' type='text/css' href='../../css/shCoreEmacs.css'/>
+<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+<style>
+#honor li{
+	font-family: '微软雅黑';
+	font-size: 18px;
+	margin-top:30px; 
+	margin: 30px auto;
+}
+.pwz p{
+	margin: 10px 0px 20px 0px;
+	font-size: 18px;
+}
+#foot{
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 1160px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+h2{
+	cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!--STICKER-->
+<div id="sticker"></div>
+
+<div id="wrapper">
+<a href="/index.html"><img src="../../images/logos/logo.png" alt=""></a>
+<!--BIO TITLE-->
+<p id="title">第 2 章 PHP程序开发---前端技术</p>
+<h2 id="titleName" class="sectionHead">2.2.1  HTML的基本结构</h2>
+
+<!--BIO-->
+<div id="bio">
+	<div id="honor">
+		<!-- 1 -->
+		<div id="honor">
+	<h2 class="title_white_r" id="st_1">1丶网页设计的开始</h2>
+	<div id="tc_1" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>　　1: 表格网页的设计</p>
+		<p>　　2: div+css网页的设计</p>
+	</div>
+	</div>
+		<!-- 2 -->
+		<div id="honor">
+		<h2 class="title_white_r" id="st_2">2丶网页的后缀名</h2>
+		<div id="tc_2" style="display:none">
+		<div class="km" style="width:1000px;height:600px;margin:20px 0px 0px 20px;">
+		<div style="width:800px;float:left;">
+			<li>因为很多时候我们需要辨别文件的扩展名如是.txt、.js、.css、.php、.htm、.asp、.aspx等文件后缀名。从扩展名即可认识文件类型及功能特点。</li>
+			<li>常见文件扩展名列表：</li>
+			<li>记事本：“.txt”</li>
+			<li>Word文档：“.doc”</li>
+			<li>电子表格：“.xls”</li>
+			<li>压缩包：“.rar”、“,zip”等</li>
+			<li>静态网页：“.html”、“.htm”、“.shtml”、“.shtm”</li>
+			<li>其它程序网页：“.php”、“.asp”、“.aspx”、“.jsp”</li>
+			<li>图片格式：“.jpg”、“.gif”、“.png”等</li>
+			<li>PS美工图文件：“.psd”</li>
+		</div>
+		<div style="width:100px;float:left;"><img src="images/htmljbjg/1.png" alt=""></div>
+	</div>
+	</div></div>
+	<!-- 3 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_3">3丶网页源代码</h2>
+	<div id="tc_3" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>　　通俗了解，通过html语法规则让图片、文字等内容，在浏览器显示出来的代码我们称之为网页源代码。</p>
+		<p>　　源代码(源文件)是指网页的html代码，这里可以将CSS代码也称为CSS源代码。</p>
+	</div>
+	</div>
+<!-- 4 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_4">4丶HTML基本结构</h2>
+	<div id="tc_4" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>　　很多时候学网页制作开发的时候第一看到的印象深刻的就是html或htm后缀结尾的网页，我们把这类网页归结为静态网页，伪静态除外。</p>
+		<p>　　那html或htm与其它如php、asp、aspx、jsp等后缀结尾的网页有什么区别呢？</p>
+		<p>　html基本语言结构:</p>
+		<div id="highlighter_678884" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;html&gt;&nbsp;&nbsp;</code></div><div class="line number2 index1 alt1"><code class="php plain">&lt;head&gt;&nbsp;&nbsp;</code></div><div class="line number3 index2 alt2"><code class="php plain">&lt;title&gt;放置文章标题&lt;/title&gt;&nbsp;&nbsp;</code></div><div class="line number4 index3 alt1"><code class="php plain">&lt;meta&nbsp;http-equiv=</code><code class="php string">"Content-Type"</code>&nbsp;<code class="php plain">content=</code><code class="php string">"text/html;&nbsp;charset=gb2312"</code>&nbsp;<code class="php plain">/&gt;&nbsp;</code><code class="php comments">//这里是网页编码现在是gb2312&nbsp;</code></div><div class="line number5 index4 alt2"><code class="php plain">&lt;meta&nbsp;name=</code><code class="php string">"keywords"</code>&nbsp;<code class="php plain">content=</code><code class="php string">"关键字"</code>&nbsp;<code class="php plain">/&gt;&nbsp;&nbsp;</code></div><div class="line number6 index5 alt1"><code class="php plain">&lt;meta&nbsp;name=</code><code class="php string">"description"</code>&nbsp;<code class="php plain">content=</code><code class="php string">"本页描述或关键字描述"</code>&nbsp;<code class="php plain">/&gt;&nbsp;</code></div><div class="line number7 index6 alt2"><code class="php plain">&lt;/head&gt;&nbsp;</code></div><div class="line number8 index7 alt1"><code class="php plain">&lt;body&gt;&nbsp;</code></div><div class="line number9 index8 alt2"><code class="php plain">这里就是正文内容&nbsp;</code></div><div class="line number10 index9 alt1"><code class="php plain">&lt;/body&gt;&nbsp;</code></div><div class="line number11 index10 alt2"><code class="php plain">&lt;/html&gt;&nbsp;</code></div></div></td></tr></tbody></table></div>
+		<p>　　完整HTML包括html DOCTYPE声明、title标题、head、网页编码声明等内容</p>
+		<p>　最初使用完整的html源代码：</p>
+		<div id="highlighter_43487" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;!DOCTYPE&nbsp;html&nbsp;PUBLIC&nbsp;</code><code class="php string">"-//W3C//DTD&nbsp;XHTML&nbsp;1.0&nbsp;Transitional//EN"</code></div><div class="line number2 index1 alt1"><code class="php spaces">&nbsp;</code><code class="php string">"<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>"</code><code class="php plain">&gt;&nbsp;</code></div><div class="line number3 index2 alt2"><code class="php plain">&lt;html&nbsp;xmlns=</code><code class="php string">"<a href="http://www.w3.org/1999/xhtml">http://www.w3.org/1999/xhtml</a>"</code><code class="php plain">&gt;&nbsp;</code></div><div class="line number4 index3 alt1"><code class="php plain">&lt;head&gt;&nbsp;</code></div><div class="line number5 index4 alt2"><code class="php plain">&lt;meta&nbsp;http-equiv=</code><code class="php string">"Content-Type"</code>&nbsp;<code class="php plain">content=</code><code class="php string">"text/html;&nbsp;charset=utf-8"</code>&nbsp;<code class="php plain">/&gt;&nbsp;</code></div><div class="line number6 index5 alt1"><code class="php plain">&lt;title&gt;标题部分-www.divcss5.com&lt;/title&gt;&nbsp;</code></div><div class="line number7 index6 alt2"><code class="php plain">&lt;meta&nbsp;name=</code><code class="php string">"keywords"</code>&nbsp;<code class="php plain">content=</code><code class="php string">"关键字"</code>&nbsp;<code class="php plain">/&gt;&nbsp;&nbsp;</code></div><div class="line number8 index7 alt1"><code class="php plain">&lt;meta&nbsp;name=</code><code class="php string">"description"</code>&nbsp;<code class="php plain">content=</code><code class="php string">"本页描述或关键字描述"</code>&nbsp;<code class="php plain">/&gt;&nbsp;</code></div><div class="line number9 index8 alt2"><code class="php plain">&lt;/head&gt;&nbsp;</code></div><div class="line number10 index9 alt1"><code class="php plain">&lt;body&gt;&nbsp;</code></div><div class="line number11 index10 alt2"><code class="php plain">内容&nbsp;</code></div><div class="line number12 index11 alt1"><code class="php plain">&lt;/body&gt;&nbsp;</code></div><div class="line number13 index12 alt2"><code class="php plain">&lt;/html&gt;&nbsp;</code></div></div></td></tr></tbody></table></div>
+		<p>　最新完整HTML结构-HTML源代码(推荐)：</p>
+		<div id="highlighter_843644" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;!DOCTYPE&nbsp;html&gt;&nbsp;&nbsp;</code></div><div class="line number2 index1 alt1"><code class="php plain">&lt;html&nbsp;lang=</code><code class="php string">"zh-CN"</code><code class="php plain">&gt;&nbsp;</code></div><div class="line number3 index2 alt2"><code class="php plain">&lt;head&gt;&nbsp;</code></div><div class="line number4 index3 alt1"><code class="php plain">&lt;meta&nbsp;charset=</code><code class="php string">"utf-8"</code><code class="php plain">&gt;&nbsp;</code></div><div class="line number5 index4 alt2"><code class="php plain">&lt;title&gt;网页标题-www.divcss5.com&lt;/title&gt;&nbsp;</code></div><div class="line number6 index5 alt1"><code class="php plain">&lt;meta&nbsp;name=</code><code class="php string">"keywords"</code>&nbsp;<code class="php plain">content=</code><code class="php string">"关键字"</code>&nbsp;<code class="php plain">/&gt;&nbsp;</code></div><div class="line number7 index6 alt2"><code class="php plain">&lt;meta&nbsp;name=</code><code class="php string">"description"</code>&nbsp;<code class="php plain">content=</code><code class="php string">"此网页描述"</code>&nbsp;<code class="php plain">/&gt;&nbsp;</code></div><div class="line number8 index7 alt1"><code class="php plain">&lt;/head&gt;&nbsp;</code></div><div class="line number9 index8 alt2"><code class="php plain">&lt;body&gt;&nbsp;</code></div><div class="line number10 index9 alt1"><code class="php plain">网页正文内容-WWW.DIVCSS5.COM&nbsp;&nbsp;-DIVCSS5提供&nbsp;</code></div><div class="line number11 index10 alt2"><code class="php plain">&lt;/body&gt;&nbsp;</code></div><div class="line number12 index11 alt1"><code class="php plain">&lt;/html&gt;&nbsp;</code></div></div></td></tr></tbody></table></div>
+		<p>　　无论是html还是其它后缀的动态页面其html语言结构都是这样的，只是在命名网页文件时以不同的后缀结尾。</p>
+		<p>　　无论是动态还是静态页面都是以"&lt;html&gt;"开始，然后在网页最后以“&lt;/html&gt;”结尾。</p>
+		<p>　　“&lt;html&gt;”后接着是“&lt;head&gt;”页头，其在&lt;head&gt;&lt;/head&gt;中的内容是在浏览器中内容无法显示的，这里是给服务器、浏览器、链接外部JS、a链接CSS样式等区域，而里面“&lt;title&gt;&lt;/title&gt;"中放置的是网页标题，可在浏览器最左上看见如图：</p>
+		<p>　　　<img src="images/htmljbjg/5.png" alt=""></p>
+		<p>　　接着“&lt;meta name="keywords" content="关键字" /&gt; &lt;meta name="description" content="本页描述或关键字描述" /&gt; ”这两个标签里的内容是给搜索引擎看的说明本页关键字及本张网页的主要内容等SEO可以用到。</p>
+		<p>　　接着就是正文“&lt;body&gt;&lt;/body&gt; ”也就是常说的body区 ，这里放置的内容就可以通过浏览器呈现给用户，其内容可以是table表格布局格式内容，也可以DIV布局的内容，也可以直接是文字。这里也是最主要区域，网页的内容呈现区。</p>
+		<p>　　最后是以“&lt;/html&gt; ”结尾，也就是网页闭合。</p>
+		<p></p>
+		<p>　　网页一般的根据xhtml标准都要求每个标签闭合，如：以&lt;html&gt; 开始，以&lt;/html&gt;闭合；如果没有闭合如&lt;meta name="keywords" content="关键字" /&gt;就没有&lt;/meta&gt; 就要&lt;meta 内容。。。  /&gt;来完成闭合。 </p>
+		<p>　　以上就是通俗来讲的最简单的html语言结构，如果需要看更多更丰富的html语言结构，可打开一个网站的网页，然后点击浏览器的“查看”--然后点击“查看源代码”即可看见该网页的html语言结构，这样可以根据此源代码来分析此网页的HTML语言结构与内容。</p>
+	</div>
+	</div>
+	<!-- 5 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_5">5丶htm、html、shtml</h2>
+		<div  id="tc_5" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>　　● htm、html、shtml网页区别</p>
+		<p>　　　首先htm、html、shtml都是静态网页的后缀，三者也可以说都是只是扩展名不同，其他一样，都是静态的网页。</p>
+		<p>　　　Htm和html是完全静态的网页不通过服务器编译解释直接送出给浏览器读取的静态网页，以Htm和html伪静态Request除外。</p>
+		<p>　　　html、htm、shtml、shtm均是静态html网页。都是网页文件后缀名不同的html网页扩展名。</p>
+		<p>　　● Html与htm</p>
+		<p>　　　html与.htm均是静态网页后缀名，网页文件没有区别与区分，html与htm后缀网页后缀可以互换，对网页完全没有影响同时也没有区别。可以认为html与htm没有本质区别，唯一区别即多与少一个“L”。</p>
+		<p>　　● Shtml与shtm</p>
+		<p>　　　shtml命名的网页文件里，使用了ssi的一些指令，就像asp中的指令，你可以在SHTML文件中写入SSI指令，当客户端访问这些shtml文件时，服务器端会把这些SHTML文件进行读取和解释，把SHTML文件中包含的SSI指令解释出来。</p>
+		<p>　　　而shtml与shtm后缀的网页文件没有区别，后缀名可以互换，区别在于和html与htm一样多与少“L”。</p>
+		<p>　　● Html与shtml区别 </p>
+		<p>　　　本质上都属于静态网页一种，html属于纯静态，客户端浏览器读取html文件是什么就呈现给浏览者什么内容。而shtml则可以使用SSI。</p>
+	</div>
+	</div>
+	<!-- 6 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_6">6丶网页的!DOCTYPE</h2>
+	<div  id="tc_6" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>　　● !DOCTYPE声明及对网页起何作用</p>
+		<p>　　　要建立符合标准的网页，DOCTYPE声明是必不可少的关键组成部分；除非你的XHTML确定了一个正确的DOCTYPE，否则你的标识和CSS都不会生效,也就是说如果没有这个DOCTYPE声明将会导致CSS失效-css无效，特别是没有声明或声明不正确将在标准浏览器下更是不能正常显示。</p>
+		<p>　　● DOCTYPE声明</p>
+		<p>　　　开始制作符合标准的站点，第一件事情就是声明符合自己需要的DOCTYPE。</p>
+		<p>　　　查看很多使用XHTML标准开发的网站，第一行就是：</p>
+		<div id="highlighter_898637" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;!DOCTYPE&nbsp;html&nbsp;PUBLIC&nbsp;</code><code class="php string">"-//W3C//DTD&nbsp;XHTML&nbsp;1.0&nbsp;Transitional//EN"</code>&nbsp;<code class="php string">"<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>"</code><code class="php plain">&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　　打开一些符合标准的站点，例如著名web设计软件开发商Macromedia，会发现同样的代码。</p>
+		<p>　　　而另一些符合标准的站点的代码则如下：</p>
+		<div id="highlighter_636722" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;!DOCTYPE&nbsp;html&nbsp;PUBLIC&nbsp;</code><code class="php string">"-//W3C//DTD&nbsp;XHTML&nbsp;1.0&nbsp;Frameset//EN"</code>&nbsp;<code class="php string">"<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd</a>"</code><code class="php plain">&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　● 什么是DOCTYPE</p>
+		<p>　　　上面这些代码我们称做DOCTYPE声明。DOCTYPE是document type(文档类型)的简写，用来说明你用的XHTML或者HTML是什么版本。</p>
+		<p>　　　其中的DTD(例如上例中的xhtml1-transitional.dtd)叫文档类型定义，里面包含了文档的规则，浏览器就根据你定义的DTD来解释你页面的标识，并展现出来。</p>
+		<p>　　　要建立符合标准的网页，DOCTYPE声明是必不可少的关键组成部分；除非你的XHTML确定了一个正确的DOCTYPE，否则你的标识和CSS都不会生效。</p>
+		<p>　　● XHTML 1.0 提供了三种DTD声明可供选择：</p>
+		<p>　　　过渡的(Transitional)：要求非常宽松的DTD，它允许你继续使用HTML4.01的标识(但是要符合xhtml的写法)，完整代码如下：</p>
+		<div id="highlighter_286300" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;!DOCTYPE&nbsp;html&nbsp;PUBLIC&nbsp;</code><code class="php string">"-//W3C//DTD&nbsp;XHTML&nbsp;1.0&nbsp;Transitional//EN"</code>&nbsp;<code class="php string">"<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd</a>"</code><code class="php plain">&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　　严格的(Strict)：要求严格的DTD，你不能使用任何表现层的标识和属性，例如&lt;br&gt;，完整代码如下：</p>
+		<div id="highlighter_900944" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;!DOCTYPE&nbsp;html&nbsp;PUBLIC&nbsp;</code><code class="php string">"-//W3C//DTD&nbsp;XHTML&nbsp;1.0&nbsp;Strict//EN"</code>&nbsp;<code class="php string">"<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd</a>"</code><code class="php plain">&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　　框架的(Frameset)：专门针对框架页面设计使用的DTD，如果你的页面中包含有框架，需要采用这种DTD，完整代码如下：</p>
+		<div id="highlighter_25894" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">&lt;!DOCTYPE&nbsp;html&nbsp;PUBLIC&nbsp;</code><code class="php string">"-//W3C//DTD&nbsp;XHTML&nbsp;1.0&nbsp;Frameset//EN"</code>&nbsp;<code class="php string">"<a href="http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd">http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd</a>"</code><code class="php plain">&gt;</code></div></div></td></tr></tbody></table></div>
+		<p>　　● 我们选择什么样的DOCTYPE?</p>
+		<p>　　　理想情况当然是严格的DTD，但对于我们大多数刚接触web标准的设计师来说，过渡的DTD(XHTML 1.0 Transitional)是目前理想选择。</p>
+		<p>　　　DOCTYPE声明必须放在每一个XHTML文档最顶部，在所有代码和标识之上</p>
+		<p><img src="images/htmljbjg/6.png" alt=""></p>
+		<p>　　● html DOCTYPE作用</p>
+		<p>　　　DOCTYPE是document type(文档类型)的简写，在Web设计中用来说明你用的XHTML或者HTML是什么版本。</p>
+		<p>　　　要建立符合标准的XHTML网页，DOCTYPE声明是必不可少的关键组成部分；除非你的XHTML确定了一个正确的DOCTYPE，否则你的标识和CSS都不会生效。</p>
+		<p>　　　一般放置在html网页代码最顶部</p>
+		<p>　　　&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//CN" "http://www.w3. org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p>
+		<p>　　　通常html DOCTYPE声明是必须的，而且使用div+css更是必不可少，如果缺少或错误document将会造成你的CSS失效或半失效，即因为css失效，网页布局变乱，有的css属性不能体现。</p>
+		<p>　　　如果你不能记住和正确输入DOCTYPE长串英文，没关系，DIVCSS5建议你使用DW软件直接新建html即可得到完整结构最基本html。</p>
+	</div></div>
+	<!--7 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_7">7丶UTF-8 GBK UTF8 GB2312</h2>
+	<div  id="tc_7" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>　　● UTF-8 GBK UTF8 GB2312之间的区别和关系</p>
+		<p>　　　UTF-8：Unicode TransformationFormat-8bit，允许含BOM，但通常不含BOM。是用以解决国际上字符的一种多字节编码，它对英文使用8位（即一个字节），中文使用24为（三个字节）来编码。UTF-8包含全世界所有国家需要用到的字符，是国际编码，通用性强。UTF-8编码的文字可以在各国支持UTF8字符集的浏览器上显示。如，如果是UTF8编码，则在外国人的英文IE上也能显示中文，他们无需下载IE的中文语言支持包。</p>
+		<p>　　　GBK是国家标准GB2312基础上扩容后兼容GB2312的标准。GBK的文字编码是用双字节来表示的，即不论中、英文字符均使用双字节来表示，为了区分中文，将其最高位都设定成1。GBK包含全部中文字符，是国家编码，通用性比UTF8差，不过UTF8占用的数据库比GBD大。</p>
+		<p>　　　1、GBK通常指GB2312编码 只支持简体中文字</p>
+		<p>　　　2、utf通常指UTF-8，支持简体中文字、繁体中文字、英文、日文、韩文等语言（支持文字更广）</p>
+		<p>　　　3、通常国内使用utf-8和gb2312，看自己需求选择</p>
+	</div></div>
+<!--8 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_8">8丶作业</h2>
+	<div  id="tc_8" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>　通过网络查询HTML与HTM的区别</p>
+		<p>　通过网络查询SHTML与SHTM的区别</p>
+		<p>　写出网页的几种!DOCTYPE方式</p>
+		<p>　必须掌握字符编码</p>
+		<p>　练习网页的基本格式</p>
+	</div></div>
+	
+	<p id="foot"><a href="../2/2.1.html">上一节</a>　　<a href="../../index.html">首　页</a>　　<a href="../2/2.2.2.html">下一节</a></p>
+</div><!--end bio-->
+
+
+
+
+
+<!--COPYRIGHT-->
+<div id="copyright">&copy; PHP教学课件，By徐东生 </div>
+
+<!--SCRIPTS-->
+<script src="../../js/jquery-1.7.1.js"></script>
+<script src="../../js/prettyPhoto.js"></script>
+<script src="../../js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".title_white_r").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("st", "tc");
+                $(id).toggle();
+            });
+        });
+ </script>
+
+</body>
+</html>

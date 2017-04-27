@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>2.2.8　CSS 文字与文本.</title>
+<meta name="viewport" content="initial-scale=1.0,width=device-width" />
+<link rel="stylesheet" href="../../css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="../../css/shCoreEmacs.css" type="text/css" media="screen" />
+<script   language=javascript>
+window.onselectstart=function()   {return   false;}       //禁用选择
+window.oncopy=function()   {return   false;}       //禁止复制
+</script> 
+<script>
+function stop(){
+return false;
+}
+document.oncontextmenu=stop;
+</script>
+<style>
+#honor li{
+	font-family: '微软雅黑';
+	font-size: 18px;
+	margin-top:30px; 
+	margin: 30px auto;
+}
+.pwz p{
+	margin: 10px 0px 20px 0px;
+	font-size: 18px;
+	cursor: pointer;
+}
+#foot{
+	clear: left; 
+	margin:40px auto; 
+	padding:40px 45px; 
+	max-width: 1160px; 
+	background: #fbfbfb; 
+	border: 1px solid #f3f3f3; 
+	border-radius: 8px; 
+	position: relative; 
+	border-width: 0 1px 1px; 
+	border-color: #fff #f3f3f3 #e8e8e8;
+	line-height: 1.6em;
+	font-size: 18px;
+	font-family: "微软雅黑";
+}
+h2{
+	cursor: pointer;
+}
+ pre{
+ 	cursor: pointer;
+ }
+ img{
+ 	cursor: pointer;
+ }
+</style>
+</head>
+<body>
+<!--STICKER-->
+<div id="sticker"></div>
+
+<div id="wrapper">
+<a href="../../index.html"><img src="../../images/logos/logo.png" alt=""></a>
+<!--BIO TITLE-->
+<p id="title">第 2 章 PHP程序开发---前端技术</p>
+<h2 id="titleName" class="sectionHead">2.2.8  CSS 文字与文本</h2>
+
+<!--BIO-->
+<div id="bio">
+	
+	<div id="honor">
+		<!-- 1 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_1">1丶CSS 中长度与颜色</h2>
+	<div id="tc_1" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p><br /></p>
+		<table>
+			<tr>
+				<td>长度单位</td>
+				<td>说明</td>
+			</tr>
+			<tr><td>in</td><td>英寸</td></tr>
+			<tr><td>cm</td><td>公分</td></tr>
+			<tr><td>mm</td><td>公里</td></tr>
+			<tr><td>em</td><td>以目前字体高度为单位</td></tr>
+			<tr><td>ex</td><td>以小写字母高度为单位（大部分不支持）</td></tr>
+			<tr><td>pt</td><td>1pt/72 英寸</td></tr>
+			<tr><td>pc</td><td>1pc/12pt</td></tr>
+			<tr><td>px</td><td>像素（推荐使用）</td></tr>
+		</table>
+		<br />
+		<table>
+			<tr>
+				<td>颜色单位：</td>
+				<td>说明</td>
+			</tr>
+			<tr><td>十六进制</td><td>如： color:#ff0000</td></tr>
+			<tr><td>颜色名称</td><td>如： color:red</td></tr>
+			<tr><td>三原色单位</td><td>如： rgb(255,0,0)</td></tr>
+		</table>
+		<p>一般最常用的是十六进制，三原色单位的原理【红（ r ） , 绿（ g ） , 蓝 (b) 】混合而成。每个值域在 0 － 255 之间</p>
+	</div>
+	</div>
+<!-- 2 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_2">2丶CSS 中的文字属性</h2>
+	<div id="tc_2" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_301111" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">属性名称&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;属性值&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明</code></div><div class="line number2 index1 alt1"><code class="php plain">font-style&nbsp;&nbsp;&nbsp;&nbsp;normal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正常显示</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">italic&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;斜体</code></div><div class="line number4 index3 alt1"><code class="php plain">font-variant&nbsp;&nbsp;normal&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;正常显示</code></div><div class="line number5 index4 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">small-caps&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;将英文大小写字母写调为同宽</code></div><div class="line number6 index5 alt1"><code class="php plain">font-weight&nbsp;&nbsp;&nbsp;normal&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;正常显示</code></div><div class="line number7 index6 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">bold&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;粗体</code></div><div class="line number8 index7 alt1"><code class="php plain">font-size&nbsp; &nbsp;&nbsp;&nbsp;像素&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;字体大小</code></div><div class="line number9 index8 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">百分比&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;字体大小</code></div><div class="line number10 index9 alt1"><code class="php plain">font-family&nbsp;&nbsp;&nbsp;字体名称&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;设置字体名称</code></div></div></td></tr></tbody></table></div>
+		<p><h4>font 属性简化的使用方法：</h4></p>
+		<p>font: 是否斜体 是否同宽 是否粗体 大小 字体名称</p>
+		<div id="highlighter_937411" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">例如&nbsp;:&nbsp;font:italic&nbsp;bold&nbsp;200&nbsp;隶书;</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+	
+<!-- 3 -->
+<div id="honor">
+	<h2 class="title_white_r" id="st_3">3丶CSS 中的文本属性</h2>
+	<div id="tc_3" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<div id="highlighter_486968" class="syntaxhighlighter  php"><div class="toolbar"><span><a href="#" class="toolbar_item command_help help">?</a></span></div><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="gutter"><div class="line number1 index0 alt2">1</div><div class="line number2 index1 alt1">2</div><div class="line number3 index2 alt2">3</div><div class="line number4 index3 alt1">4</div><div class="line number5 index4 alt2">5</div><div class="line number6 index5 alt1">6</div><div class="line number7 index6 alt2">7</div><div class="line number8 index7 alt1">8</div><div class="line number9 index8 alt2">9</div><div class="line number10 index9 alt1">10</div><div class="line number11 index10 alt2">11</div><div class="line number12 index11 alt1">12</div><div class="line number13 index12 alt2">13</div><div class="line number14 index13 alt1">14</div><div class="line number15 index14 alt2">15</div><div class="line number16 index15 alt1">16</div><div class="line number17 index16 alt2">17</div><div class="line number18 index17 alt1">18</div><div class="line number19 index18 alt2">19</div><div class="line number20 index19 alt1">20</div><div class="line number21 index20 alt2">21</div><div class="line number22 index21 alt1">22</div><div class="line number23 index22 alt2">23</div><div class="line number24 index23 alt1">24</div><div class="line number25 index24 alt2">25</div><div class="line number26 index25 alt1">26</div><div class="line number27 index26 alt2">27</div><div class="line number28 index27 alt1">28</div><div class="line number29 index28 alt2">29</div><div class="line number30 index29 alt1">30</div><div class="line number31 index30 alt2">31</div></td><td class="code"><div class="container"><div class="line number1 index0 alt2"><code class="php plain">属性名称&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;属性值 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;说明</code></div><div class="line number2 index1 alt1"><code class="php plain">color&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;十六进制&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;颜色</code></div><div class="line number3 index2 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">英文名称&nbsp;&nbsp;&nbsp;&nbsp; 颜色</code></div><div class="line number4 index3 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">三原色单位&nbsp;&nbsp;&nbsp;&nbsp;颜色</code></div><div class="line number5 index4 alt2"><code class="php plain">letter-spacing&nbsp;normal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 正常显示</code></div><div class="line number6 index5 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">长度&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文本间隔</code></div><div class="line number7 index6 alt2"><code class="php plain">word-spacing&nbsp;&nbsp; normal&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;正常显示</code></div><div class="line number8 index7 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">数字&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;单词间距</code></div><div class="line number9 index8 alt2"><code class="php plain">white-space&nbsp;&nbsp;&nbsp; normal&nbsp;&nbsp;&nbsp;&nbsp; 文本自动处理换行</code></div><div class="line number10 index9 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">pre&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;换行和空白受保护</code></div><div class="line number11 index10 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">nowrap&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;强制在同一行显示</code></div><div class="line number12 index11 alt1"><code class="php plain">text-align&nbsp;&nbsp;&nbsp;&nbsp; left&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文字靠左</code></div><div class="line number13 index12 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">right&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;文字靠右</code></div><div class="line number14 index13 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">center&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;文字靠中</code></div><div class="line number15 index14 alt2"><code class="php plain">text-decoration&nbsp;&nbsp;&nbsp; none&nbsp;&nbsp; 正常显示</code></div><div class="line number16 index15 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">underline&nbsp; &nbsp;&nbsp;&nbsp;加上下划线</code></div><div class="line number17 index16 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">overline&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;加顶线</code></div><div class="line number18 index17 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">line-through&nbsp;&nbsp; 加删除线</code></div><div class="line number19 index18 alt2"><code class="php plain">text-indent&nbsp;&nbsp;&nbsp; 长度&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;首行缩进</code></div><div class="line number20 index19 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">百分比&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 同上</code></div><div class="line number21 index20 alt2"><code class="php plain">line-height&nbsp;&nbsp;&nbsp; 像素&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 行高</code></div><div class="line number22 index21 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">数字&nbsp;/&nbsp;百分比&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;行高</code></div><div class="line number23 index22 alt2"><code class="php plain">text-transform&nbsp;&nbsp;&nbsp;&nbsp; none&nbsp;&nbsp; 正常显示可以包含大，小字符</code></div><div class="line number24 index23 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">capitalize&nbsp;&nbsp;&nbsp;&nbsp; 字符串第一个字符大&nbsp;写</code></div><div class="line number25 index24 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">uppercase&nbsp; 设置大写字符</code></div><div class="line number26 index25 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">lowercase&nbsp; 设置小写字符</code></div><div class="line number27 index26 alt2"><code class="php plain">vertical-align&nbsp;&nbsp;&nbsp;&nbsp; sub&nbsp;&nbsp;&nbsp; 设置文字为下标。</code></div><div class="line number28 index27 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">super&nbsp; 设置文字为上标。</code></div><div class="line number29 index28 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">top&nbsp;&nbsp;&nbsp; 元件往上端靠齐。</code></div><div class="line number30 index29 alt1"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">middle&nbsp;&nbsp;&nbsp;&nbsp; 设置文字是在中线位置。</code></div><div class="line number31 index30 alt2"><code class="php spaces">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</code><code class="php plain">bottom&nbsp;&nbsp;&nbsp;&nbsp; 元件往下端靠齐。</code></div></div></td></tr></tbody></table></div>
+	</div>
+	</div>
+<!-- 5 -->
+	<div id="honor">
+	<h2 class="title_white_r" id="st_5">5丶作业</h2>
+	<div id="tc_5" class="pwz" style="display:none;width:1100px;margin:0px auto">
+		<p>明白以及了解CSS中的长度以及颜色单位和写法</p>
+		<p>练习css文字以及文本的各种属性，要求在作业中充分体现</p>
+	</div>
+	</div>
+</div>
+
+	<p id="foot"><a href="../2/2.2.7.html">上一节</a>　　<a href="../../index.html">首　页</a>　　<a href="../2/2.2.9.html">下一节</a></p>
+</div><!--end bio-->
+
+
+
+
+
+<!--COPYRIGHT-->
+<div id="copyright">&copy; PHP教学课件，By徐东生 </div>
+
+<!--SCRIPTS-->
+<script src="../../js/jquery-1.7.1.js"></script>
+<script src="../../js/prettyPhoto.js"></script>
+<script src="../../js/custom.js"></script>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $(".title_white_r").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("st", "tc");
+                $(id).toggle();
+            });
+            $(".info").click(function () {
+                var id = this.id;
+                id = "#" + id.replace("bt", "nr");
+                $(id).toggle();
+            });
+        });
+       function tc(val){
+       	window.open(val,"newwindow","height=500, width=800, top=300,left=500,toolbar=no,menubar=no, scrollbars=no, resizable=no,location=no,status=no");
+       }
+ </script>
+
+</body>
+</html>
